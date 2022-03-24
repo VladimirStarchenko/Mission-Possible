@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Fabscg/group-3-project/static/css/main.073c9b0a.css",
+    "main.js": "/Fabscg/group-3-project/static/js/main.fbb6122d.js",
+    "static/js/787.e2d148cf.chunk.js": "/Fabscg/group-3-project/static/js/787.e2d148cf.chunk.js",
+    "service-worker.js": "/Fabscg/group-3-project/service-worker.js",
+    "index.html": "/Fabscg/group-3-project/index.html",
+    "main.073c9b0a.css.map": "/Fabscg/group-3-project/static/css/main.073c9b0a.css.map",
+    "main.fbb6122d.js.map": "/Fabscg/group-3-project/static/js/main.fbb6122d.js.map",
+    "787.e2d148cf.chunk.js.map": "/Fabscg/group-3-project/static/js/787.e2d148cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.fbb6122d.js"
+  ]
+}

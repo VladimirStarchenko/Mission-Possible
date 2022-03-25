@@ -24,6 +24,7 @@ startServer();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(express.static(""));
 
 // if we're in production, serve client/build as static assets
 if (process.env.NODE_ENV === "production") {
@@ -41,7 +42,7 @@ if (process.env.NODE_ENV === "production") {
 
 db.once("open", () => {
   app.listen(PORT, () => {
-    getCharities();
+    // getCharities();
     console.log(`🌍 Now listening on localhost:${PORT}`);
   });
 });

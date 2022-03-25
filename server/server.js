@@ -34,12 +34,14 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-//! Since platforms like Heroku will only use a single server, i'm not exactly sure how this will work, since right now they need to go to localhost:3000 (the port the server is running on) in order to for this function to run and the data to be saved to the database
-app.get("/", (req, res) => {
-  getCharities();
-  res.end();
-});
+// app.get("/", (req, res) => {
+//   getCharities();
+//   res.end();
+// });
 
 db.once("open", () => {
-  app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
+  app.listen(PORT, () => {
+    getCharities();
+    console.log(`🌍 Now listening on localhost:${PORT}`);
+  });
 });

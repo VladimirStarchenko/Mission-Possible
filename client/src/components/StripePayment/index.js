@@ -35,7 +35,7 @@ function Payment() {
       <StripeCheckout
         stripeKey="pk_test_4TbuO6qAW2XPuce1Q6ywrGP200NrDZ2233"
         // token={handleToken}
-        amount={101}
+        amount={10000}
         name="Example Charity"
         billingAddress
         shippingAddress>            

@@ -1,11 +1,11 @@
 import React from "react";
 
-function Nav() {
+function Nav(setCurrentPage) {
   return ( 
       <>
-      <div class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container-fluid">
-        <a href="#Home" class="navbar-brand">
+      <div className="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div className="container-fluid">
+        <a href="#Home" className="navbar-brand">
          Mission:Possible
         </a>
         <button
@@ -14,24 +14,24 @@ function Nav() {
           data-toggle="collapse"
           data-target="#navbarCollapse"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
         <div
-          class="collapse navbar-collapse justify-content-between"
+          className="collapse navbar-collapse justify-content-between"
           id="navbarCollapse"
         >
-          <div class="navbar-nav ml-auto">
-            <a href="#Home" class="nav-item nav-link active">
+          <div className="navbar-nav ml-auto">
+            <a onClick={()=> setCurrentPage("Home")} href="#Home" className="nav-item nav-link active">
               Home
             </a>
-            <a href="#About" class="nav-item nav-link">
+            <a onClick={()=> setCurrentPage("About")} href="#About" className="nav-item nav-link">
               About
             </a>
-            <a href="#Causes" class="nav-item nav-link">
+            <a onClick={()=> setCurrentPage("Causes")} href="#Causes" className="nav-item nav-link">
               Causes
             </a>
-            <a href="#Contact" class="nav-item nav-link">
+            <a onClick={()=> setCurrentPage("Contact")} href="#Contact" className="nav-item nav-link">
               Contact
             </a>
           </div>

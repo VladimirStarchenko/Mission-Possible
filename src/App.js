@@ -1,7 +1,7 @@
-import NavBar from "./components/NavBar";
+import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Causes from "./pages/Contact";
+import Causes from "./pages/Causes";
 import Contact from "./pages/Contact";
 import React, { useState } from "react";
 
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <NavBar setCurrentPage={setCurrentPage} />
+      <Nav setCurrentPage={setCurrentPage} />
       {renderPage()}
     </>
   );

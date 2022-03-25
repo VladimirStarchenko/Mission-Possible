@@ -1,4 +1,6 @@
 import React from "react"
+import twoChildren from '../assets/img/carousel-1.jpg'
+
 
 function Home(){
     return(
@@ -9,7 +11,7 @@ function Home(){
                     <div className="owl-carousel">
                         <div className="carousel-item">
                             <div className="carousel-img">
-                                <img src="img/carousel-1.jpg" alt="Image"/>
+                                <img src={twoChildren} alt="Image"/>
                             </div>
                             <div className="carousel-text">
                                 <h1>Let's be kind for children</h1>

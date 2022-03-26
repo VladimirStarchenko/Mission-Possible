@@ -93,38 +93,6 @@ function Home() {
               <a href="causes.html" className="nav-item nav-link">
                 Causes
               </a>
-              <a href="event.html" className="nav-item nav-link">
-                Events
-              </a>
-              <a href="blog.html" className="nav-item nav-link">
-                Blog
-              </a>
-              <div className="nav-item dropdown">
-                <a
-                  href="#"
-                  className="nav-link dropdown-toggle"
-                  data-toggle="dropdown"
-                >
-                  Pages
-                </a>
-                <div className="dropdown-menu">
-                  <a href="single.html" className="dropdown-item">
-                    Detail Page
-                  </a>
-                  <a href="service.html" className="dropdown-item">
-                    What We Do
-                  </a>
-                  <a href="team.html" className="dropdown-item">
-                    Meet The Team
-                  </a>
-                  <a href="donate.html" className="dropdown-item">
-                    Donate Now
-                  </a>
-                  <a href="volunteer.html" className="dropdown-item">
-                    Become A Volunteer
-                  </a>
-                </div>
-              </div>
               <a href="contact.html" className="nav-item nav-link">
                 Contact
               </a>
@@ -226,7 +194,7 @@ function Home() {
       <div
         className="modal fade"
         id="videoModal"
-        tabindex="-1"
+        tabIndex="-1"
         role="dialog"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
@@ -708,7 +676,7 @@ function Home() {
                     data-toggle="buttons"
                   >
                     <label className="btn btn-custom active">
-                      <input type="radio" name="options" checked /> $10
+                      <input type="radio" name="options" /> $10
                     </label>
                     <label className="btn btn-custom">
                       <input type="radio" name="options" /> $20
@@ -1065,7 +1033,7 @@ function Home() {
           </div>
           <div className="contact-form">
             <div id="success"></div>
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <form name="sentMessage" id="contactForm" noValidate="novalidate">
               <div className="control-group">
                 <input
                   type="text"

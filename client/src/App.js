@@ -1,18 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SavedCharities from "./pages/SavedCharities";
 import StripePayment from "./components/StripePayment";
 
-import Navbar from "./components/Navbar";
-import TempHome from "./pages/TempHome";
+import AppNavbar from "./components/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Causes from "./pages/Causes";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("Home");
+  function renderPage() {
+    if (currentPage === "Home") {
+      return <Home />;
+    } else if (currentPage === "About") {
+      return <About />;
+    } else if (currentPage === "Contact") {
+      return <Contact />;
+    } else if (currentPage === "Causes") {
+      return <Causes />;
+    } else {
+      return <Home />;
+    }
+  }
   return (
     <>
       <Router>
         <>
-          <Navbar />
-          <TempHome />
+          <>
+            <AppNavbar setCurrentPage={setCurrentPage} />
+            {renderPage()}
+          </>
           <Switch>
             {/* <Route exact path='/' component={ SearchBooks } /> */}
             {

@@ -4,6 +4,14 @@ const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
+    // get all users
+    users: async () => {
+      return User.find().select("-__v -password");
+    },
+    // get a user by username
+    user: async (parent, { username }) => {
+      return User.findOne({ username }).select("-__v -password");
+    },
     allCharities: async () => {
       const charities = await Charity.find({});
 
@@ -23,6 +31,19 @@ const resolvers = {
   },
 
   Mutation: {
+    updateUser: async (parent, { _id, username, email, password }) => {
+      const user = await User.findOneAndUpdate(
+        { _id },
+        {
+          username,
+          email,
+          password,
+        }
+      );
+      const token = signToken(user);
+
+      return { token, user };
+    },
     addUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user);

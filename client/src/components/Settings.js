@@ -2,39 +2,41 @@ import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
 import { useMutation } from '@apollo/react-hooks';
-import { ADD_USER } from '../utils/mutations';
+import { UPDATE_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 
-const SignupForm = () => {
+const SettingsForm = (props) => { 
+  const{userData} = props
+console.log('My Info',userData);
   // set initial form state
-//   const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
-//   // set state for form validation
-//   const [validated] = useState(false);
-//   // set state for alert
-//   const [showAlert, setShowAlert] = useState(false);
+  const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
+  // set state for form validation
+  const [validated] = useState(false);
+  // set state for alert
+  const [showAlert, setShowAlert] = useState(false);
 
-//   const [addUser, { error }] = useMutation(ADD_USER);
+  const [updateUser, { error }] = useMutation(UPDATE_USER);
 
-//   const handleInputChange = (event) => {
-//     const { name, value } = event.target;
-//     setUserFormData({ ...userFormData, [name]: value });
-//   };
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setUserFormData({ ...userFormData, [name]: value });
+  };
 
-//   const handleFormSubmit = async (event) => {
-//     event.preventDefault();
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
 
-//     // use try/catch instead of promises to handle errors
-//     try {
-//       // execute addUser mutation and pass in variable data from form
-//       const { data } = await addUser({
-//         variables: { ...userFormData }
-//       });
-//       Auth.login(data.addUser.token);
-//     } catch (e) {
-//       console.error(e);
-//     }
-//   };
+    // use try/catch instead of promises to handle errors
+    try {
+      // execute addUser mutation and pass in variable data from form
+      const { data } = await updateUser({
+        variables: { ...userFormData }
+      });
+      Auth.login(data.updateUser.token);
+    } catch (e) {
+      console.error(e);
+    }
+  };
 
   return (
     <>
@@ -90,7 +92,7 @@ const SignupForm = () => {
           disabled={ !(userFormData.username && userFormData.email && userFormData.password) }
           type='submit'
           variant='success'>
-          Submit
+          Save
         </Button>
       </Form>
       {error && <div>Sign up failed</div> }
@@ -98,4 +100,4 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default SettingsForm;

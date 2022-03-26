@@ -2,14 +2,27 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
 import SignUpForm from './SignupForm';
+import SettingsForm from './Settings';
 import LoginForm from './LoginForm';
 
 import Auth from '../utils/auth';
 
+import { useQuery, useMutation } from '@apollo/react-hooks';
+import { GET_ME } from '../utils/queries';
+
+
 const AppNavbar = () => {
   // set modal display state
+  const { loading, data: userData, refetch } = useQuery(GET_ME);
   const [showModal, setShowModal] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
+  
+  function openModal(){
+     refetch();
+     if (!loading) {
+      setShowSettingsModal(true);
+     }
+  }
 
   return (
     <>
@@ -30,7 +43,7 @@ const AppNavbar = () => {
                   <Nav.Link as={Link} to='/saved'>
                     Saved Charities
                   </Nav.Link>
-                  <Nav.Link onClick={() => setShowSettingsModal(true)}>Settings</Nav.Link>
+                  <Nav.Link onClick={() => openModal()}>Settings</Nav.Link>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                   
                 </>
@@ -94,7 +107,7 @@ const AppNavbar = () => {
           <Modal.Body>
             <Tab.Content>
               <Tab.Pane eventKey='settings'>
-                <SignUpForm handleModalClose={() => setShowSettingsModal(false)} />
+                <SettingsForm userData={userData} handleModalClose={() => setShowSettingsModal(false)} />
               </Tab.Pane>
             </Tab.Content>
           </Modal.Body>

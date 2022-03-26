@@ -9,6 +9,9 @@ const db = require('./config/connection');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+// Constant to use when converting pennies to dollars
+const MULTIPLIER = 100;
+
 // create a new Apollo server and pass in our schema data
 const server = new ApolloServer({
   typeDefs,
@@ -49,7 +52,7 @@ app.post('/donate', async (req, res) => {
           product_data: {
             name: charityName,
           },
-          unit_amount: amount * 100,
+          unit_amount: amount * MULTIPLIER,
         },
         quantity: 1,
       },

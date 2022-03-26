@@ -7,7 +7,7 @@ function Payment() {
       <form id='donate-form' action ='/donate' method="POST">
         <input type="text" name="charity"></input>
         <input type="number" name="donation"></input>
-        <button type="submit">Donate</button> </form>
+        <button type="submit" className="donate-btn">Donate</button> </form>
     </div>
   );
 }

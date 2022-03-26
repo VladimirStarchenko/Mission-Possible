@@ -42,11 +42,13 @@ app.post('/donate', async (req, res) => {
 
   const charityName = req.body.charity
   const amount = parseInt(req.body.donation)
-  // Creating a new payment session
-  const session = await stripe.checkout.sessions.create({
 
-    line_items: [
-      {
+  try {
+    // Creating a new payment session
+      const session = await stripe.checkout.sessions.create({
+
+      line_items: [
+        {
         price_data: {
           currency: 'cad',
           product_data: {
@@ -55,15 +57,21 @@ app.post('/donate', async (req, res) => {
           unit_amount: amount * MULTIPLIER,
         },
         quantity: 1,
-      },
-    ],
-    mode: 'payment',
-    // Redirect back to homepage, temp links at the moment
-    success_url: 'http://localhost:3000/saved',
-    cancel_url: 'http://localhost:3000/saved',
-  });
+        },
+      ],
+        mode: 'payment',
+        // Redirect back to homepage, temp links at the moment
+        success_url: 'http://localhost:3000/saved',
+        cancel_url: 'http://localhost:3000/saved',
+      });
 
-  res.redirect(303, session.url);
+      res.redirect(303, session.url);
+  }
+  catch(err){
+    console.log("Need to enter charity name and amount");
+  }
+
+  
 });
 
 

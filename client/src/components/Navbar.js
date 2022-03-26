@@ -27,7 +27,7 @@ const AppNavbar = () => {
                 Search For Charity
               </Nav.Link>
               {/* if user is logged in show Saved Charities and logout */}
-              {Auth.loggedIn() ? (
+              {Auth.loggedIn(true) ? (
                 <>
                   <Nav.Link as={Link} to='/saved'>
                     Saved Charities

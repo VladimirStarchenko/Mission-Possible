@@ -30,7 +30,7 @@ console.log('My Info',userData);
     try {
       // execute addUser mutation and pass in variable data from form
       const { data } = await updateUser({
-        variables: { ...userFormData }
+        variables: { ...userFormData, _id:userData.me._id }
       });
       Auth.login(data.updateUser.token);
     } catch (e) {
@@ -51,7 +51,7 @@ console.log('My Info',userData);
           <Form.Label htmlFor='username'>Username</Form.Label>
           <Form.Control
             type='text'
-            placeholder='Your username'
+            placeholder={userData.me.username}
             name='username'
             autoComplete='username'
             onChange={ handleInputChange }
@@ -65,7 +65,7 @@ console.log('My Info',userData);
           <Form.Label htmlFor='email'>Email</Form.Label>
           <Form.Control
             type='email'
-            placeholder='Your email address'
+            placeholder={userData.me.email}
             name='email'
             autoComplete='email'
             onChange={ handleInputChange }
@@ -79,7 +79,7 @@ console.log('My Info',userData);
           <Form.Label htmlFor='password'>Password</Form.Label>
           <Form.Control
             type='password'
-            placeholder='Your password'
+            placeholder='********' 
             name='password'
             autoComplete='new-password'
             onChange={ handleInputChange }
@@ -89,7 +89,7 @@ console.log('My Info',userData);
           <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
         </Form.Group>
         <Button
-          disabled={ !(userFormData.username && userFormData.email && userFormData.password) }
+          // disabled={ !(userFormData.username && userFormData.email && userFormData.password) }
           type='submit'
           variant='success'>
           Save

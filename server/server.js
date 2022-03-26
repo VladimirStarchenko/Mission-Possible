@@ -2,6 +2,8 @@ const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
 
+const MULTIPLIER=100;
+
 const { typeDefs, resolvers } = require('./schemas');
 const { authMiddleware } = require('./utils/auth');
 const db = require('./config/connection');
@@ -31,29 +33,44 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
+// API key for testing purposes, needs to be placed in .env file before deploying
 const stripe = require('stripe')('sk_test_51KgdiPLjNl0PfVF02aF7hfVDXiNDAXFcTcttw3ECXHqyRrA3Jb3gGA91IFOyEEIh5tjmnSqoc3zufbvzIXx2VLN200hJ9AWkvi');
 
-app.post('/checkout', async (req, res) => {
+// POST request to make a payment/donation to a charity, through Stripe checkout window
+app.post('/donate', async (req, res) => {
 
-  const session = await stripe.checkout.sessions.create({
-    line_items: [
-      {
+  const charityName = req.body.charity
+  const amount = parseInt(req.body.donation)
+console.log(charityName, amount);
+  try {
+    // Creating a new payment session
+      const session = await stripe.checkout.sessions.create({
+
+      line_items: [
+        {
         price_data: {
           currency: 'cad',
           product_data: {
-            name: 'T-shirt',
+            name: charityName,
           },
-          unit_amount: 2000,
+          unit_amount: amount * MULTIPLIER,
         },
         quantity: 1,
-      },
-    ],
-    mode: 'payment',
-    success_url: 'https://example.com/success',
-    cancel_url: 'https://example.com/cancel',
-  });
+        },
+      ],
+        mode: 'payment',
+        // Redirect back to homepage, temp links at the moment
+        success_url: 'http://localhost:3000/saved',
+        cancel_url: 'http://localhost:3000/saved',
+      });
 
-  res.redirect(303, session.url);
+      res.redirect(303, session.url);
+  }
+  catch(err){
+    console.log(err);
+  }
+
+  
 });
 
 

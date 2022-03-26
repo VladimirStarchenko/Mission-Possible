@@ -10,7 +10,7 @@ const SettingsForm = (props) => {
   const{userData} = props
 console.log('My Info',userData);
   // set initial form state
-  const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
+  const [userFormData, setUserFormData] = useState({ username: userData.me.username, email: userData.me.email, password: '' });
   // set state for form validation
   const [validated] = useState(false);
   // set state for alert
@@ -44,14 +44,14 @@ console.log('My Info',userData);
       <Form noValidate validated={ validated } onSubmit={ handleFormSubmit }>
         {/* show alert if server response is bad */ }
         <Alert dismissible onClose={ () => setShowAlert(false) } show={ showAlert } variant='danger'>
-          Something went wrong with your signup!
+          Something went wrong with your update!
         </Alert>
 
         <Form.Group>
           <Form.Label htmlFor='username'>Username</Form.Label>
           <Form.Control
             type='text'
-            placeholder={userData.me.username}
+            placeholder=''
             name='username'
             autoComplete='username'
             onChange={ handleInputChange }
@@ -65,7 +65,7 @@ console.log('My Info',userData);
           <Form.Label htmlFor='email'>Email</Form.Label>
           <Form.Control
             type='email'
-            placeholder={userData.me.email}
+            placeholder=''
             name='email'
             autoComplete='email'
             onChange={ handleInputChange }
@@ -79,7 +79,7 @@ console.log('My Info',userData);
           <Form.Label htmlFor='password'>Password</Form.Label>
           <Form.Control
             type='password'
-            placeholder='********' 
+            placeholder='' 
             name='password'
             autoComplete='new-password'
             onChange={ handleInputChange }
@@ -95,7 +95,7 @@ console.log('My Info',userData);
           Save
         </Button>
       </Form>
-      {error && <div>Sign up failed</div> }
+      {error && <div>Update failed</div> }
     </>
   );
 };

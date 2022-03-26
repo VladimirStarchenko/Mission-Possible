@@ -9,6 +9,7 @@ import Auth from '../utils/auth';
 const AppNavbar = () => {
   // set modal display state
   const [showModal, setShowModal] = useState(false);
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
 
   return (
     <>
@@ -29,7 +30,9 @@ const AppNavbar = () => {
                   <Nav.Link as={Link} to='/saved'>
                     Saved Charities
                   </Nav.Link>
+                  <Nav.Link onClick={() => setShowSettingsModal(true)}>Settings</Nav.Link>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
+                  
                 </>
               ) : (
                 <Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>
@@ -65,6 +68,33 @@ const AppNavbar = () => {
               </Tab.Pane>
               <Tab.Pane eventKey='signup'>
                 <SignUpForm handleModalClose={() => setShowModal(false)} />
+              </Tab.Pane>
+            </Tab.Content>
+          </Modal.Body>
+        </Tab.Container>
+      </Modal>
+
+      {/* set settings modal data up */}
+      <Modal
+        size='lg'
+        show={showSettingsModal}
+        onHide={() => setShowSettingsModal(false)}
+        aria-labelledby='settings-modal'>
+        {/* tab container to do either settings component */}
+        <Tab.Container defaultActiveKey='settings'>
+          <Modal.Header closeButton>
+            <Modal.Title id='settings-modal'>
+              <Nav variant='pills'>
+                <Nav.Item>
+                  <Nav.Link eventKey='settings'>Settings</Nav.Link>
+                </Nav.Item>
+              </Nav>
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Tab.Content>
+              <Tab.Pane eventKey='settings'>
+                <SignUpForm handleModalClose={() => setShowSettingsModal(false)} />
               </Tab.Pane>
             </Tab.Content>
           </Modal.Body>

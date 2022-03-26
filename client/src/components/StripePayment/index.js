@@ -1,6 +1,6 @@
 import React from "react";
-import StripeCheckout from "react-stripe-checkout";
-import axios from "axios";
+// import StripeCheckout from "react-stripe-checkout";
+// import axios from "axios";
 import { toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
@@ -32,15 +32,16 @@ function Payment() {
         <h3>${product.price}</h3> */}
         <input id = 'Donation' type ='number'></input>
       </div>
-      <StripeCheckout
+      {/* <StripeCheckout
         stripeKey="pk_test_4TbuO6qAW2XPuce1Q6ywrGP200NrDZ2233"
         // token={handleToken}
         amount={10000}
         name="Example Charity"
         billingAddress
         shippingAddress>            
-      <button>Donate</button>
-      </StripeCheckout>
+      
+      </StripeCheckout> */}
+      <form action ='/checkout' method="POST"><button>Donate</button> </form>
     </div>
   );
 }

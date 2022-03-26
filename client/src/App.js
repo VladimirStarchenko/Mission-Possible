@@ -5,7 +5,7 @@ import ApolloClient from 'apollo-boost';
 // import SearchBooks from './pages/SearchBooks';
 import SavedCharities from './pages/SavedCharities';
 import Navbar from './components/Navbar';
-import StripePayment from './components/StripePayment'
+
 
 const client = new ApolloClient({
   request: operation => {

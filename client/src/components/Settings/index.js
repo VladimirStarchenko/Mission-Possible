@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation, useQuery } from '@apollo/react-hooks';
 import { ADD_USER } from '../../utils/mutations';
-
 import Auth from '../../utils/auth';
+import { GET_ME } from '../../utils/queries';
 
-const SignupForm = () => {
-  // set initial form state
-  const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
+const Settings = () => {
+
+  // Retrieve current user data
+  const { data } = useQuery(GET_ME);
+
+  // set initial form state to the current logged in user's data
+  const [userFormData, setUserFormData] = useState({ username: data.me.username, email: data.me.email, password: '' });
   // set state for form validation
   const [validated] = useState(false);
   // set state for alert
   const [showAlert, setShowAlert] = useState(false);
+
 
   const [addUser, { error }] = useMutation(ADD_USER);
 
@@ -111,4 +116,4 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default Settings;

@@ -2,17 +2,16 @@ import React from 'react';
 import { Jumbotron, Container } from 'react-bootstrap';
 
 import { useQuery } from '@apollo/react-hooks';
-import { GET_ME } from '../utils/queries';
 // import { REMOVE_BOOK } from '../utils/mutations';
+import { GET_ME } from '../utils/queries';
 
 // import Auth from '../utils/auth';
 // import { removeBookId } from '../utils/localStorage';
 import StripePayment from '../components/StripePayment'
 
 const SavedCharities = () => {
+
   const { loading } = useQuery(GET_ME);
-  // const [removeBook] = useMutation(REMOVE_BOOK);
-  // const userData = data?.me || [];
 
   // if data isn't here yet, say so
   if (loading) {

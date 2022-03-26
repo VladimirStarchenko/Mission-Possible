@@ -28,7 +28,7 @@ console.log('My Info',userData);
 
     // use try/catch instead of promises to handle errors
     try {
-      // execute addUser mutation and pass in variable data from form
+      // execute updateUser mutation and pass in variable data from form
       const { data } = await updateUser({
         variables: { ...userFormData, _id:userData.me._id }
       });

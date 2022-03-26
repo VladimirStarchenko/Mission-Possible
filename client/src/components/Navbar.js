@@ -99,7 +99,7 @@ const AppNavbar = () => {
             <Modal.Title id='settings-modal'>
               <Nav variant='pills'>
                 <Nav.Item>
-                  <Nav.Link eventKey='settings'>Settings</Nav.Link>
+                  <Nav.Link eventKey='settings'>Update Account Information</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Modal.Title>

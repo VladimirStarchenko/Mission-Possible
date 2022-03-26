@@ -1,3 +1,5 @@
+import Footer from "../Footer";
+
 function Causes() {
   return (
     <>
@@ -274,6 +276,7 @@ function Causes() {
         </div>
       </div>
       {/* <!-- Causes End --> */}
+      <Footer />
     </>
   );
 }

@@ -1,3 +1,5 @@
+import Footer from "../Footer";
+
 function Contact() {
   return (
     <>
@@ -87,6 +89,7 @@ function Contact() {
         </div>
       </div>
       {/* <!-- Contact End --> */}
+      <Footer />
     </>
   );
 }

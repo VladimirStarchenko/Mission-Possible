@@ -1,4 +1,4 @@
-import gql from "graphql-tag";
+import gql from 'graphql-tag';
 
 export const GET_ME = gql`
   {
@@ -15,17 +15,6 @@ export const GET_ME = gql`
         image
         link
       }
-    }
-  }
-`;
-
-export const GET_CHARITIES = gql`
-  query charities {
-    allCharities {
-      name
-      mission
-      charityNavigatorURL
-      websiteURL
     }
   }
 `;

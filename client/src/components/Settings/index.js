@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
 import { useMutation } from '@apollo/react-hooks';
-import { ADD_USER } from '../utils/mutations';
+import { ADD_USER } from '../../utils/mutations';
 
-import Auth from '../utils/auth';
+import Auth from '../../utils/auth';
 
 const SignupForm = () => {
   // set initial form state
@@ -42,7 +42,7 @@ const SignupForm = () => {
       <Form noValidate validated={ validated } onSubmit={ handleFormSubmit }>
         {/* show alert if server response is bad */ }
         <Alert dismissible onClose={ () => setShowAlert(false) } show={ showAlert } variant='danger'>
-          Something went wrong with your signup!
+          Something went wrong with your update!
         </Alert>
 
         <Form.Group>
@@ -74,7 +74,7 @@ const SignupForm = () => {
         </Form.Group>
 
         <Form.Group>
-          <Form.Label htmlFor='password'>Password</Form.Label>
+          <Form.Label htmlFor='oldPassword'>Old Password</Form.Label>
           <Form.Control
             type='password'
             placeholder='Your password'
@@ -84,16 +84,29 @@ const SignupForm = () => {
             value={ userFormData.password }
             required
           />
-          <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
+          <Form.Control.Feedback type='invalid'>Old password is required!</Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label htmlFor='newPassword'>New Password</Form.Label>
+          <Form.Control
+            type='password'
+            placeholder='Your password'
+            name='password'
+            autoComplete='new-password'
+            onChange={ handleInputChange }
+            value={ userFormData.password }
+            required
+          />
+          <Form.Control.Feedback type='invalid'>New password is required!</Form.Control.Feedback>
         </Form.Group>
         <Button
           disabled={ !(userFormData.username && userFormData.email && userFormData.password) }
           type='submit'
           variant='success'>
-          Submit
+          Update
         </Button>
       </Form>
-      {error && <div>Sign up failed</div> }
+      {error && <div>Update successful</div> }
     </>
   );
 };

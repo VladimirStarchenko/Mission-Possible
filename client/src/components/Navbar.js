@@ -133,12 +133,27 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav, Container, Modal, Tab } from "react-bootstrap";
 import SignUpForm from "./SignupForm";
 import LoginForm from "./LoginForm";
-
 import Auth from "../utils/auth";
+//adding this for settings
+import SettingsForm from "./settings.js";
+import { useQuery, useMutation } from "@apollo/react-hooks";
+import { GET_ME } from "../utils/queries";
+
+
 
 const AppNavbar = ({ setCurrentPage }) => {
-  // set modal display state
+  //set modal display state
+  const { loading, data: userData, refetch } = useQuery(GET_ME);
   const [showModal, setShowModal] = useState(false);
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
+
+ function openModal() {
+   refetch();
+   if (!loading) {
+     setShowSettingsModal(true);
+   }
+ }
+
 
   return (
     <>
@@ -159,6 +174,7 @@ const AppNavbar = ({ setCurrentPage }) => {
                   <Nav.Link as={Link} to="/saved">
                     Saved Charities
                   </Nav.Link>
+                  <Nav.Link onClick={() => openModal()}>Settings</Nav.Link>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
               ) : (
@@ -203,6 +219,39 @@ const AppNavbar = ({ setCurrentPage }) => {
           </Modal.Body>
         </Tab.Container>
       </Modal>
+      set settings modal data up
+<Modal
+   size="lg"
+   show={showSettingsModal}
+   onHide={() => setShowSettingsModal(false)}
+   aria-labelledby="settings-modal"
+ >
+   {/* tab container to do either settings component */}
+   <Tab.Container defaultActiveKey="settings">
+     <Modal.Header closeButton>
+       <Modal.Title id="settings-modal">
+         <Nav variant="pills">
+           <Nav.Item>
+             <Nav.Link eventKey="settings">
+               Update Account Information
+             </Nav.Link>
+           </Nav.Item>
+         </Nav>
+       </Modal.Title>
+     </Modal.Header>
+     <Modal.Body>
+       <Tab.Content>
+         <Tab.Pane eventKey="settings">
+           <SettingsForm
+             userData={userData}
+             handleModalClose={() => setShowSettingsModal(false)}
+           />
+         </Tab.Pane>
+       </Tab.Content>
+     </Modal.Body>
+   </Tab.Container>
+ </Modal>
+     
 
       {/* <!-- Nav Bar Start --> */}
       <div className="navbar navbar-expand-lg bg-dark navbar-dark">

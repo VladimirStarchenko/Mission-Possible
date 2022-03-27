@@ -5,12 +5,14 @@ import StripePayment from "./components/StripePayment";
 
 import Navbar from "./components/Navbar";
 import TempHome from "./pages/TempHome";
+import DeleteUserForm from "./components/deleteUserForm.js";
 
 function App() {
   return (
     <>
       <Router>
         <>
+          <DeleteUserForm />
           <Navbar />
           <TempHome />
           <Switch>

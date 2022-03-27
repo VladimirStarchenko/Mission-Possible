@@ -51,7 +51,11 @@ const resolvers = {
 
       return { token, user };
     },
-    deleteUser: async (parent, args, context) => {},
+    deleteUser: async (parent, args, context) => {
+      const deletedUser = User.findByIdAndRemove(context.user._id);
+
+      return deletedUser;
+    },
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 

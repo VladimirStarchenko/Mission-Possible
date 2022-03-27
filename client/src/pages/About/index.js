@@ -11,7 +11,7 @@ function About() {
               <div
                 className="about-img"
                 data-parallax="scroll"
-                data-image-src="img/about.jpg"
+                data-image-src="/assets/img/about.jpg"
               ></div>
             </div>
             <div className="col-lg-6">
@@ -93,7 +93,7 @@ function About() {
       <div
         className="facts"
         data-parallax="scroll"
-        data-image-src="img/facts.jpg"
+        data-image-src="/assets/img/facts.jpg"
       >
         <div className="container">
           <div className="row">
@@ -157,22 +157,22 @@ function About() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="img/team-1.jpg" alt="Team Image" />
+                  <img src="/assets/img/team-1.jpg" alt="Team Image" />
                 </div>
                 <div className="team-text">
                   <h2>Donald John</h2>
                   <p>Founder & CEO</p>
                   <div className="team-social">
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -182,22 +182,22 @@ function About() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="img/team-2.jpg" alt="Team Image" />
+                  <img src="/assets/img/team-2.jpg" alt="Team Image" />
                 </div>
                 <div className="team-text">
                   <h2>Adam Phillips</h2>
                   <p>Chef Executive</p>
                   <div className="team-social">
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -207,22 +207,22 @@ function About() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="img/team-3.jpg" alt="Team Image" />
+                  <img src="/assets/img/team-3.jpg" alt="Team Image" />
                 </div>
                 <div className="team-text">
                   <h2>Thomas Olsen</h2>
                   <p>Chef Advisor</p>
                   <div className="team-social">
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -232,22 +232,22 @@ function About() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="img/team-4.jpg" alt="Team Image" />
+                  <img src="/assets/img/team-4.jpg" alt="Team Image" />
                 </div>
                 <div className="team-text">
                   <h2>James Alien</h2>
                   <p>Advisor</p>
                   <div className="team-social">
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>

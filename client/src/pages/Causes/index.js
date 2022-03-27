@@ -11,8 +11,8 @@ function Causes() {
               <h2>Popular Causes</h2>
             </div>
             <div className="col-12">
-              <a href="">Home</a>
-              <a href="">Causes</a>
+              <a href="#">Home</a>
+              <a href="#">Causes</a>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@ function Causes() {
           <div className="owl-carousel causes-carousel">
             <div className="causes-item">
               <div className="causes-img">
-                <img src="img/causes-1.jpg" alt="Image" />
+                <img src="/assets/img/causes-1.jpg" alt="Image" />
               </div>
               <div className="causes-progress">
                 <div className="progress">
@@ -163,7 +163,7 @@ function Causes() {
             </div>
             <div className="causes-item">
               <div className="causes-img">
-                <img src="img/causes-2.jpg" alt="Image" />
+                <img src="/assets/img/causes-2.jpg" alt="Image" />
               </div>
               <div className="causes-progress">
                 <div className="progress">
@@ -200,7 +200,7 @@ function Causes() {
             </div>
             <div className="causes-item">
               <div className="causes-img">
-                <img src="img/causes-3.jpg" alt="Image" />
+                <img src="/assets/img/causes-3.jpg" alt="Image" />
               </div>
               <div className="causes-progress">
                 <div className="progress">
@@ -237,7 +237,7 @@ function Causes() {
             </div>
             <div className="causes-item">
               <div className="causes-img">
-                <img src="img/causes-4.jpg" alt="Image" />
+                <img src="/assets/img/causes-4.jpg" alt="Image" />
               </div>
               <div className="causes-progress">
                 <div className="progress">

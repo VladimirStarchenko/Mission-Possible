@@ -32,7 +32,7 @@ function Home() {
           <div className="owl-carousel">
             <div className="carousel-item">
               <div className="carousel-img">
-                <img src="../../assets/img/carousel-1.jpg" alt="Image" />
+                <img src="/assets/img/carousel-1.jpg" alt="Image" />
                 {/* <img src="../img/carousel-1.jpg" alt="Image" /> */}
               </div>
               <div className="carousel-text">
@@ -43,7 +43,7 @@ function Home() {
                   malesuada
                 </p>
                 <div className="carousel-btn">
-                  <a className="btn btn-custom" href="">
+                  <a className="btn btn-custom" href="#">
                     Donate Now
                   </a>
                   <a
@@ -59,7 +59,7 @@ function Home() {
             </div>
             <div className="carousel-item">
               <div className="carousel-img">
-                <img src="../img/carousel-2.jpg" alt="Image" />
+                <img src="/assets/img/carousel-2.jpg" alt="Image" />
               </div>
               <div className="carousel-text">
                 <h1>Get Involved with helping hand</h1>
@@ -69,7 +69,7 @@ function Home() {
                   tortor
                 </p>
                 <div className="carousel-btn">
-                  <a className="btn btn-custom" href="">
+                  <a className="btn btn-custom" href="#">
                     Donate Now
                   </a>
                   <a
@@ -85,7 +85,7 @@ function Home() {
             </div>
             <div className="carousel-item">
               <div className="carousel-img">
-                <img src="../img/carousel-3.jpg" alt="Image" />
+                <img src="/assets/img/carousel-3.jpg" alt="Image" />
               </div>
               <div className="carousel-text">
                 <h1>Bringing smiles to millions</h1>
@@ -95,7 +95,7 @@ function Home() {
                   pellentesque odio
                 </p>
                 <div className="carousel-btn">
-                  <a className="btn btn-custom" href="">
+                  <a className="btn btn-custom" href="#">
                     Donate Now
                   </a>
                   <a
@@ -158,7 +158,7 @@ function Home() {
               <div
                 className="about-img"
                 data-parallax="scroll"
-                data-image-src="img/about.jpg"
+                data-image-src="/assets/img/about.jpg"
               ></div>
             </div>
             <div className="col-lg-6">
@@ -337,7 +337,7 @@ function Home() {
       <div
         className="facts"
         data-parallax="scroll"
-        data-image-src="img/facts.jpg"
+        data-image-src="/assets/img/facts.jpg"
       >
         <div className="container">
           <div className="row">
@@ -400,7 +400,7 @@ function Home() {
           <div className="owl-carousel causes-carousel">
             <div className="causes-item">
               <div className="causes-img">
-                <img src="../img/causes-1.jpg" alt="Image" />
+                <img src="/assets/img/causes-1.jpg" alt="Image" />
               </div>
               <div className="causes-progress">
                 <div className="progress">
@@ -437,7 +437,7 @@ function Home() {
             </div>
             <div className="causes-item">
               <div className="causes-img">
-                <img src="../img/causes-2.jpg" alt="Image" />
+                <img src="/assets/img/causes-2.jpg" alt="Image" />
               </div>
               <div className="causes-progress">
                 <div className="progress">
@@ -474,7 +474,7 @@ function Home() {
             </div>
             <div className="causes-item">
               <div className="causes-img">
-                <img src="../img/causes-3.jpg" alt="Image" />
+                <img src="/assets/img/causes-3.jpg" alt="Image" />
               </div>
               <div className="causes-progress">
                 <div className="progress">
@@ -511,7 +511,7 @@ function Home() {
             </div>
             <div className="causes-item">
               <div className="causes-img">
-                <img src="../img/causes-4.jpg" alt="Image" />
+                <img src="/assets/img/causes-4.jpg" alt="Image" />
               </div>
               <div className="causes-progress">
                 <div className="progress">
@@ -555,7 +555,7 @@ function Home() {
       <div
         className="donate"
         data-parallax="scroll"
-        data-image-src="img/donate.jpg"
+        data-image-src="/assets/img/donate.jpg"
       >
         <div className="container">
           <div className="row align-items-center">
@@ -632,7 +632,7 @@ function Home() {
           <div className="row">
             <div className="col-lg-6">
               <div className="event-item">
-                <img src="../img/event-1.jpg" alt="Image" />
+                <img src="/assets/img/event-1.jpg" alt="Image" />
                 <div className="event-content">
                   <div className="event-meta">
                     <p>
@@ -651,7 +651,7 @@ function Home() {
                       Lorem ipsum dolor sit amet elit. Neca pretim miura bitur
                       facili ornare velit non vulpte liqum metus tortor
                     </p>
-                    <a className="btn btn-custom" href="">
+                    <a className="btn btn-custom" href="#">
                       Join Now
                     </a>
                   </div>
@@ -660,7 +660,7 @@ function Home() {
             </div>
             <div className="col-lg-6">
               <div className="event-item">
-                <img src="../img/event-2.jpg" alt="Image" />
+                <img src="/assets/img/event-2.jpg" alt="Image" />
                 <div className="event-content">
                   <div className="event-meta">
                     <p>
@@ -679,7 +679,7 @@ function Home() {
                       Lorem ipsum dolor sit amet elit. Neca pretim miura bitur
                       facili ornare velit non vulpte liqum metus tortor
                     </p>
-                    <a className="btn btn-custom" href="">
+                    <a className="btn btn-custom" href="#">
                       Join Now
                     </a>
                   </div>
@@ -702,22 +702,22 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="../img/team-1.jpg" alt="Team Image" />
+                  <img src="/assets/img/team-1.jpg" alt="Team Image" />
                 </div>
                 <div className="team-text">
                   <h2>Donald John</h2>
                   <p>Founder & CEO</p>
                   <div className="team-social">
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -727,22 +727,22 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="../img/team-2.jpg" alt="Team Image" />
+                  <img src="/assets/img/team-2.jpg" alt="Team Image" />
                 </div>
                 <div className="team-text">
                   <h2>Adam Phillips</h2>
                   <p>Chef Executive</p>
                   <div className="team-social">
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -752,22 +752,22 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="../img/team-3.jpg" alt="Team Image" />
+                  <img src="/assets/img/team-3.jpg" alt="Team Image" />
                 </div>
                 <div className="team-text">
                   <h2>Thomas Olsen</h2>
                   <p>Chef Advisor</p>
                   <div className="team-social">
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -777,22 +777,22 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="../img/team-4.jpg" alt="Team Image" />
+                  <img src="/assets/img/team-4.jpg" alt="Team Image" />
                 </div>
                 <div className="team-text">
                   <h2>James Alien</h2>
                   <p>Advisor</p>
                   <div className="team-social">
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -808,7 +808,7 @@ function Home() {
       <div
         className="volunteer"
         data-parallax="scroll"
-        data-image-src="img/volunteer.jpg"
+        data-image-src="/assets/img/volunteer.jpg"
       >
         <div className="container">
           <div className="row align-items-center">
@@ -878,7 +878,7 @@ function Home() {
           <div className="owl-carousel testimonials-carousel">
             <div className="testimonial-item">
               <div className="testimonial-profile">
-                <img src="../img/testimonial-1.jpg" alt="Image" />
+                <img src="/assets/img/testimonial-1.jpg" alt="Image" />
                 <div className="testimonial-name">
                   <h3>Person Name</h3>
                   <p>Profession</p>
@@ -894,7 +894,7 @@ function Home() {
             </div>
             <div className="testimonial-item">
               <div className="testimonial-profile">
-                <img src="../img/testimonial-2.jpg" alt="Image" />
+                <img src="/assets/img/testimonial-2.jpg" alt="Image" />
                 <div className="testimonial-name">
                   <h3>Person Name</h3>
                   <p>Profession</p>
@@ -910,7 +910,7 @@ function Home() {
             </div>
             <div className="testimonial-item">
               <div className="testimonial-profile">
-                <img src="../img/testimonial-3.jpg" alt="Image" />
+                <img src="/assets/img/testimonial-3.jpg" alt="Image" />
                 <div className="testimonial-name">
                   <h3>Person Name</h3>
                   <p>Profession</p>
@@ -926,7 +926,7 @@ function Home() {
             </div>
             <div className="testimonial-item">
               <div className="testimonial-profile">
-                <img src="../img/testimonial-4.jpg" alt="Image" />
+                <img src="/assets/img/testimonial-4.jpg" alt="Image" />
                 <div className="testimonial-name">
                   <h3>Person Name</h3>
                   <p>Profession</p>
@@ -953,7 +953,7 @@ function Home() {
             <h2>Contact for any query</h2>
           </div>
           <div className="contact-img">
-            <img src="../img/contact.jpg" alt="Image" />
+            <img src="/assets/img/contact.jpg" alt="Image" />
           </div>
           <div className="contact-form">
             <div id="success"></div>

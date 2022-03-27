@@ -11,8 +11,8 @@ function Contact() {
               <h2>Contact Us</h2>
             </div>
             <div className="col-12">
-              <a href="">Home</a>
-              <a href="">Contact</a>
+              <a href="#">Home</a>
+              <a href="#">Contact</a>
             </div>
           </div>
         </div>
@@ -27,11 +27,11 @@ function Contact() {
             <h2>Contact for any query</h2>
           </div>
           <div className="contact-img">
-            <img src="img/contact.jpg" alt="Image" />
+            <img src="/assets/img/contact.jpg" alt="Image" />
           </div>
           <div className="contact-form">
             <div id="success"></div>
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <form name="sentMessage" id="contactForm" noValidate="noValidate">
               <div className="control-group">
                 <input
                   type="text"

@@ -43,9 +43,12 @@ const stripe = require("stripe")(
 
 // POST request to make a payment/donation to a charity, through Stripe checkout window
 app.post("/donate", async (req, res) => {
-  const charityName = req.body.charity;
-  const amount = parseInt(req.body.donation);
-  console.log(charityName, amount);
+  const donor = req.body.donor;
+  const amount = parseInt(req.body.amount);
+  
+    
+  
+
   try {
     // Creating a new payment session
     const session = await stripe.checkout.sessions.create({
@@ -54,7 +57,7 @@ app.post("/donate", async (req, res) => {
           price_data: {
             currency: "cad",
             product_data: {
-              name: charityName,
+              name: donor,
             },
             unit_amount: amount * MULTIPLIER,
           },
@@ -71,7 +74,7 @@ app.post("/donate", async (req, res) => {
   } catch (err) {
     console.log(err);
   }
-});
+ });
 
 // app.get("/", (req, res) => {
 //   getCharities();

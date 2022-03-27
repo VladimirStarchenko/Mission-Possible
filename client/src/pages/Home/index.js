@@ -578,12 +578,13 @@ function Home() {
             </div>
             <div className="col-lg-5">
               <div className="donate-form">
-                <form>
+                <form action ='/donate' method="POST">
                   <div className="control-group">
                     <input
                       type="text"
                       className="form-control"
                       placeholder="Name"
+                      name="donor"
                       required="required"
                     />
                   </div>
@@ -595,7 +596,16 @@ function Home() {
                       required="required"
                     />
                   </div>
-                  <div
+                  <div className="control-group">
+                    <input
+                      type="number"
+                      className="form-control"
+                      placeholder="Amount"
+                      name="amount"
+                      required="required"
+                    />
+                  </div>
+                  {/* <div
                     className="btn-group btn-group-toggle"
                     data-toggle="buttons"
                   >
@@ -608,7 +618,8 @@ function Home() {
                     <label className="btn btn-custom">
                       <input type="radio" name="options" /> $30
                     </label>
-                  </div>
+                  </div> */}
+
                   <div>
                     <button className="btn btn-custom" type="submit">
                       Donate Now

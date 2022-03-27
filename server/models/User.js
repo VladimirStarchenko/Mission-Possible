@@ -1,8 +1,8 @@
-const { Schema, model } = require('mongoose');
-const bcrypt = require('bcrypt');
+const { Schema, model } = require("mongoose");
+const bcrypt = require("bcrypt");
 
 // import schema from Book.js
-const bookSchema = require('./Book');
+const bookSchema = require("./Book");
 
 const userSchema = new Schema(
   {
@@ -15,7 +15,7 @@ const userSchema = new Schema(
       type: String,
       required: true,
       unique: true,
-      match: [/.+@.+\..+/, 'Must use a valid email address'],
+      match: [/.+@.+\..+/, "Must use a valid email address"],
     },
     password: {
       type: String,
@@ -26,18 +26,31 @@ const userSchema = new Schema(
   },
   // set this to use virtual below
   {
-    toJSON: {
-      virtuals: true,
-    },
+    // When the data is outputted as JSON or as an object, we want our virtual properties to show
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
   }
 );
 
 // hash user password
-userSchema.pre('save', async function (next) {
-  if (this.isNew || this.isModified('password')) {
-    const saltRounds = 10;
-    this.password = await bcrypt.hash(this.password, saltRounds);
+// userSchema.pre("save", async function (next) {
+//   if (this.isNew || this.isModified("password")) {
+//     const saltRounds = 10;
+//     this.password = await bcrypt.hash(this.password, saltRounds);
+//   }
+
+//   next();
+// });
+
+// Encrypt/hash password before user is created
+userSchema.pre("save", async function (next) {
+  // If the password has not been modified then exit this function and call the next middleware
+  if (!this.isModified("password")) {
+    next();
   }
+
+  // Because this is async we need to await for it to be finished
+  this.password = await bcrypt.hash(this.password, 12);
 
   next();
 });
@@ -48,10 +61,10 @@ userSchema.methods.isCorrectPassword = async function (password) {
 };
 
 // when we query a user, we'll also get another field called `bookCount` with the number of saved books we have
-userSchema.virtual('bookCount').get(function () {
+userSchema.virtual("bookCount").get(function () {
   return this.savedBooks.length;
 });
 
-const User = model('User', userSchema);
+const User = model("User", userSchema);
 
 module.exports = User;

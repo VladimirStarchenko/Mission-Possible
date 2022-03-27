@@ -31,15 +31,16 @@ const resolvers = {
   },
 
   Mutation: {
-    updateUser: async (parent, { _id, username, email, password }) => {
-      const user = await User.findOneAndUpdate(
-        { _id },
-        {
-          username,
-          email,
-          password,
-        }
-      );
+    updateUser: async (parent, args, context) => {
+      const user = await User.findById(context.user._id);
+
+      if (args.username) user.username = args.username;
+      if (args.email) user.email = args.email;
+      if (args.password) user.password = args.password;
+
+      // We want the new password to be hashed by our pre-save hook
+      await user.save({ validateBeforeSave: false });
+
       const token = signToken(user);
 
       return { token, user };
@@ -50,6 +51,7 @@ const resolvers = {
 
       return { token, user };
     },
+    deleteUser: async (parent, args, context) => {},
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 

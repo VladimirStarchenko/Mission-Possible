@@ -1,6 +1,7 @@
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
+require('dotenv').config();
 
 const MULTIPLIER = 100;
 
@@ -40,15 +41,14 @@ if (process.env.NODE_ENV === "production") {
 const stripe = require("stripe")(
   "sk_test_51KgdiPLjNl0PfVF02aF7hfVDXiNDAXFcTcttw3ECXHqyRrA3Jb3gGA91IFOyEEIh5tjmnSqoc3zufbvzIXx2VLN200hJ9AWkvi"
 );
+const SK = process.env.REACT_APP_SK;
+console.log(SK);
 
 // POST request to make a payment/donation to a charity, through Stripe checkout window
 app.post("/donate", async (req, res) => {
   const donor = req.body.donor;
   const amount = parseInt(req.body.amount);
   
-    
-  
-
   try {
     // Creating a new payment session
     const session = await stripe.checkout.sessions.create({

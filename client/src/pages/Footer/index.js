@@ -9,54 +9,27 @@ function Footer() {
               <div className="footer-contact">
                 <h2>Our Head Office</h2>
                 <p>
-                  <i className="fa fa-map-marker-alt"></i>123 Street, New York,
-                  USA
+                  <i className="fa fa-map-marker-alt"></i>1345 New Street, Toronto,
+                  Canada
                 </p>
                 <p>
-                  <i className="fa fa-phone-alt"></i>+012 345 67890
+                  <i className="fa fa-phone-alt"></i>+1 416 855 5555
                 </p>
                 <p>
-                  <i className="fa fa-envelope"></i>info@example.com
+                  <i className="fa fa-envelope"></i>missionpossible@gmail.com
                 </p>
-                <div className="footer-social">
-                  <a className="btn btn-custom" href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a className="btn btn-custom" href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a className="btn btn-custom" href="#">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                  <a className="btn btn-custom" href="#">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a className="btn btn-custom" href="#">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                </div>
+
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="footer-link">
                 <h2>Popular Links</h2>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Popular Causes</a>
-                <a href="#">Upcoming Events</a>
-                <a href="#">Latest Blog</a>
+                <a href="about">About Us</a>
+                <a href="contact">Contact Us</a>
+                <a href="cause">Popular Causes</a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="footer-link">
-                <h2>Useful Links</h2>
-                <a href="#">Terms of use</a>
-                <a href="#">Privacy policy</a>
-                <a href="#">Cookies</a>
-                <a href="#">Help</a>
-                <a href="#">FQAs</a>
-              </div>
-            </div>
+           
             <div className="col-lg-3 col-md-6">
               <div className="footer-newsletter">
                 <h2>Newsletter</h2>

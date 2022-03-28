@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import SavedCharities from "./pages/SavedCharities";
 import StripePayment from "./components/StripePayment";
 
 import AppNavbar from "./components/Navbar";
@@ -12,6 +11,7 @@ import Causes from "./pages/Causes";
 import Navbar from "./components/Navbar";
 import TempHome from "./pages/TempHome";
 import DeleteUserForm from "./components/deleteUserForm.js";
+import SearchCharities from "./pages/SearchCharities";
 
 // <DeleteUserForm />
 //         <Navbar />
@@ -40,6 +40,8 @@ function App() {
             <AppNavbar setCurrentPage={setCurrentPage} />
             {renderPage()}
           </>
+
+          <SearchCharities />
           <Switch>
             {/* <Route exact path='/' component={ SearchBooks } /> */}
             {

@@ -1,7 +1,7 @@
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
-require('dotenv').config();
+require("dotenv").config();
 
 const MULTIPLIER = 100;
 
@@ -48,7 +48,7 @@ console.log(SK);
 app.post("/donate", async (req, res) => {
   const donor = req.body.donor;
   const amount = parseInt(req.body.amount);
-  
+
   try {
     // Creating a new payment session
     const session = await stripe.checkout.sessions.create({
@@ -74,12 +74,12 @@ app.post("/donate", async (req, res) => {
   } catch (err) {
     console.log(err);
   }
- });
+});
 
 // app.get("/", (req, res) => {
 //   getCharities();
 //   res.end();
-// })
+// });
 
 db.once("open", () => {
   app.listen(PORT, () => {

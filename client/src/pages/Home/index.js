@@ -128,58 +128,16 @@ function Home() {
         <div className="container">
           <div className="section-header text-center">
             <p>What We Do?</p>
-            <h2>We believe that we can save more lifes with you</h2>
+            <h2>Increase donations for the causes we care about</h2>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="service-item">
-                <div className="service-icon">
-                  <i className="flaticon-diet"></i>
-                </div>
-                <div className="service-text">
-                  <h3>Healthy Food</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="service-item">
-                <div className="service-icon">
-                  <i className="flaticon-water"></i>
-                </div>
-                <div className="service-text">
-                  <h3>Pure Water</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="service-item">
-                <div className="service-icon">
-                  <i className="flaticon-healthcare"></i>
-                </div>
-                <div className="service-text">
-                  <h3>Health Care</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
-                  </p>
-                </div>
-              </div>
-            </div>
             <div className="col-lg-4 col-md-6">
               <div className="service-item">
                 <div className="service-icon">
                   <i className="flaticon-education"></i>
                 </div>
                 <div className="service-text">
-                  <h3>Primary Education</h3>
+                  <h3>DEMOCRACY NOW!</h3>
                   <p>
                     Lorem ipsum dolor sit amet elit. Phase nec preti facils
                     ornare velit non metus tortor
@@ -193,7 +151,7 @@ function Home() {
                   <i className="flaticon-home"></i>
                 </div>
                 <div className="service-text">
-                  <h3>Residence Facilities</h3>
+                  <h3>COMIC RELIEF</h3>
                   <p>
                     Lorem ipsum dolor sit amet elit. Phase nec preti facils
                     ornare velit non metus tortor
@@ -207,7 +165,7 @@ function Home() {
                   <i className="flaticon-social-care"></i>
                 </div>
                 <div className="service-text">
-                  <h3>Social Care</h3>
+                  <h3>SAFE PASSSSGE</h3>
                   <p>
                     Lorem ipsum dolor sit amet elit. Phase nec preti facils
                     ornare velit non metus tortor
@@ -219,224 +177,6 @@ function Home() {
         </div>
       </div>
       {/* <!-- Service End --> */}
-
-      {/* <!-- Facts Start --> */}
-      <div
-        className="facts"
-        data-parallax="scroll"
-        data-image-src="/assets/img/facts.jpg"
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-home"></i>
-                <div className="facts-text">
-                  <h3 className="facts-plus" data-toggle="counter-up">
-                    150
-                  </h3>
-                  <p>Countries</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-charity"></i>
-                <div className="facts-text">
-                  <h3 className="facts-plus" data-toggle="counter-up">
-                    400
-                  </h3>
-                  <p>Volunteers</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-kindness"></i>
-                <div className="facts-text">
-                  <h3 className="facts-dollar" data-toggle="counter-up">
-                    10000
-                  </h3>
-                  <p>Our Goal</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-donation"></i>
-                <div className="facts-text">
-                  <h3 className="facts-dollar" data-toggle="counter-up">
-                    5000
-                  </h3>
-                  <p>Raised</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Facts End --> */}
-
-      {/* <!-- Causes Start --> */}
-      <div className="causes">
-        <div className="container">
-          <div className="section-header text-center">
-            <p>Popular Causes</p>
-            <h2>Let's know about charity causes around the world</h2>
-          </div>
-          <div className="owl-carousel causes-carousel">
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/causes-1.jpg" alt="Image" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/causes-2.jpg" alt="Image" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/causes-3.jpg" alt="Image" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/donateBox.jpg" alt="donate" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Causes End --> */}
 
       {/* <!-- Donate Start --> */}
       <div
@@ -505,7 +245,134 @@ function Home() {
       </div>
       {/* <!-- Donate End --> */}
 
-      {/* <!-- Event Start --> */}
+    {/* <!-- Team Start --> */}
+  <div className="team">
+        <div className="container">
+          <div className="section-header text-center">
+            <span></span>
+            <h2>The founders of Mission:Possible</h2>
+          </div>
+          <div className="row">
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/team-1.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Donald John</h2>
+                  <p>Founder & CEO</p>
+                  <div className="team-social">
+                    <a href="linkedin">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/team-2.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Adam Phillips</h2>
+                  <p>Chef Executive</p>
+                  <div className="team-social">
+                    <a href="linkedin">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/team-3.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Thomas Olsen</h2>
+                  <p>Chef Advisor</p>
+                  <div className="team-social">
+                    <a href="linkedin">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/team-4.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>James Alien</h2>
+                  <p>Advisor</p>
+                  <div className="team-social">
+                    <a href="linkedin">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/arslan_razi.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>James Alien</h2>
+                  <p>Advisor</p>
+                  <div className="team-social">
+                    <a href="linkedin">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/team-4.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>James Alien</h2>
+                  <p>Advisor</p>
+                  <div className="team-social">
+                    <a href="linkedin">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Team End --> */}
       
 
       

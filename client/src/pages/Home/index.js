@@ -45,13 +45,13 @@ function Home() {
               <div
                 className="about-img"
                 data-parallax="scroll"
-                data-image-src="/assets/img/donate.jpg"
+                data-image-src="/assets/img/facts.jpg"
               ></div>
             </div>
             <div className="col-lg-6">
               <div className="section-header">
                 <p>Learn About Us</p>
-                <h2>Worldwide non-profit charity organization</h2>
+                <h2>A non-profit charity organization working to solve the issues we care about through donations</h2>
               </div>
               <div className="about-tab">
                 <ul className="nav nav-pills nav-justified">
@@ -86,34 +86,14 @@ function Home() {
 
                 <div className="tab-content">
                   <div id="tab-content-1" className="container tab-pane active">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    vitae pellentesque turpis. Donec in hendrerit dui, vel
-                    blandit massa. Ut vestibulum suscipit cursus. Cras quis
-                    porta nulla, ut placerat risus. Aliquam nec magna eget velit
-                    luctus dictum. Phasellus et felis sed purus tristique
-                    dignissim. Morbi sit amet leo at purus accumsan
-                    pellentesque. Vivamus fermentum nisi vel dapibus blandit.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  We are a non profit organization working to raise money for various causes throughtout Canada. Benefactors can donate to the charity of their choice. 
                   </div>
                   <div id="tab-content-2" className="container tab-pane fade">
-                    Sed tincidunt, magna ut vehicula volutpat, turpis diam
-                    condimentum justo, posuere congue turpis massa in mi. Proin
-                    ornare at massa at fermentum. Nunc aliquet sed nisi iaculis
-                    ornare. Nam semper tortor eget est egestas, eu sagittis nunc
-                    sodales. Interdum et malesuada fames ac ante ipsum primis in
-                    faucibus. Praesent bibendum sapien sed purus molestie
-                    malesuada. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.
+                  Our mission to take make things possible through donations. 
+
                   </div>
                   <div id="tab-content-3" className="container tab-pane fade">
-                    Aliquam dolor odio, mollis sed feugiat sit amet, feugiat ut
-                    sapien. Nunc eu dignissim lorem. Suspendisse at hendrerit
-                    enim. Interdum et malesuada fames ac ante ipsum primis in
-                    faucibus. Sed condimentum semper turpis vel facilisis. Nunc
-                    vel faucibus orci. Mauris ut mauris rhoncus, efficitur nisi
-                    at, venenatis quam. Praesent egestas pretium enim sit amet
-                    finibus. Curabitur at erat molestie, tincidunt lorem eget,
-                    consequat ligula.
+                  Create change through donations! 
                   </div>
                 </div>
               </div>
@@ -124,65 +104,23 @@ function Home() {
       {/* <!-- About End --> */}
 
       {/* <!-- Service Start --> */}
+      <span></span>
       <div className="service">
         <div className="container">
           <div className="section-header text-center">
             <p>What We Do?</p>
-            <h2>We believe that we can save more lifes with you</h2>
+            <h2>Increase donations for the causes we care about</h2>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="service-item">
-                <div className="service-icon">
-                  <i className="flaticon-diet"></i>
-                </div>
-                <div className="service-text">
-                  <h3>Healthy Food</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="service-item">
-                <div className="service-icon">
-                  <i className="flaticon-water"></i>
-                </div>
-                <div className="service-text">
-                  <h3>Pure Water</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="service-item">
-                <div className="service-icon">
-                  <i className="flaticon-healthcare"></i>
-                </div>
-                <div className="service-text">
-                  <h3>Health Care</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
-                  </p>
-                </div>
-              </div>
-            </div>
             <div className="col-lg-4 col-md-6">
               <div className="service-item">
                 <div className="service-icon">
                   <i className="flaticon-education"></i>
                 </div>
                 <div className="service-text">
-                  <h3>Primary Education</h3>
+                  <h3>DEMOCRACY NOW!</h3>
                   <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
+                    An American TV, radio and internet news programs that combines news reporting, interviews, investigative journalism and political commentary, with a focus on peace activistism linked to environmental justice and social justice, guided by the ethics of ecofeminism as a philosophy. Democracy Now! gives activists and citizens a platform to debate "The Establishment". 
                   </p>
                 </div>
               </div>
@@ -193,10 +131,9 @@ function Home() {
                   <i className="flaticon-home"></i>
                 </div>
                 <div className="service-text">
-                  <h3>Residence Facilities</h3>
+                  <h3>COMIC RELIEF</h3>
                   <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
+                  Comic Relief invests in nonprofit and community-led organizations with programs focused on tackling the root causes and consequences of poverty and social injustice. We support initiatives and policies that advance economic opportunity and leadership development in communities directly impacted by intergenerational poverty.
                   </p>
                 </div>
               </div>
@@ -207,10 +144,9 @@ function Home() {
                   <i className="flaticon-social-care"></i>
                 </div>
                 <div className="service-text">
-                  <h3>Social Care</h3>
+                  <h3>SAFE PASSSSGE</h3>
                   <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
+                  Every year thousands of child refugees arrive in Europe, almost half of them are unaccompanied and as a result are at risk of being abused and trafficked. Yet many of these children have a legal right to travel safely to a place of sanctuary. With our support they can access their rights. 
                   </p>
                 </div>
               </div>
@@ -220,229 +156,11 @@ function Home() {
       </div>
       {/* <!-- Service End --> */}
 
-      {/* <!-- Facts Start --> */}
-      <div
-        className="facts"
-        data-parallax="scroll"
-        data-image-src="/assets/img/facts.jpg"
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-home"></i>
-                <div className="facts-text">
-                  <h3 className="facts-plus" data-toggle="counter-up">
-                    150
-                  </h3>
-                  <p>Countries</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-charity"></i>
-                <div className="facts-text">
-                  <h3 className="facts-plus" data-toggle="counter-up">
-                    400
-                  </h3>
-                  <p>Volunteers</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-kindness"></i>
-                <div className="facts-text">
-                  <h3 className="facts-dollar" data-toggle="counter-up">
-                    10000
-                  </h3>
-                  <p>Our Goal</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-donation"></i>
-                <div className="facts-text">
-                  <h3 className="facts-dollar" data-toggle="counter-up">
-                    5000
-                  </h3>
-                  <p>Raised</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Facts End --> */}
-
-      {/* <!-- Causes Start --> */}
-      <div className="causes">
-        <div className="container">
-          <div className="section-header text-center">
-            <p>Popular Causes</p>
-            <h2>Let's know about charity causes around the world</h2>
-          </div>
-          <div className="owl-carousel causes-carousel">
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/causes-1.jpg" alt="Image" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/causes-2.jpg" alt="Image" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/causes-3.jpg" alt="Image" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/donateBox.jpg" alt="donate" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Causes End --> */}
-
       {/* <!-- Donate Start --> */}
       <div
         className="donate"
         data-parallax="scroll"
-        data-image-src="/assets/img/donate.jpg"
+        // data-image-src="/assets/img/donate.jpg"
       >
         <div className="container">
           <div className="row align-items-center">
@@ -505,12 +223,205 @@ function Home() {
       </div>
       {/* <!-- Donate End --> */}
 
-      {/* <!-- Event Start --> */}
-      
+    {/* <!-- Team Start --> */}
+  <div className="team">
+        <div className="container">
+          <div className="section-header text-center">
+            <span></span>
+            <h2>The founders of Mission:Possible</h2>
+          </div>
+          <div className="row">
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/team-1.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Arslan Razi</h2>
+                  <p>Founder & CEO</p>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/arslanrazi/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/arslan-razi">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/team-2.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Bianca Chami</h2>
+                  <p>Chef Executive</p>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/bianca-chami-3ba87a178/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/chamibia">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/team-3.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Daniel Arzanipour</h2>
+                  <p>Chef Advisor</p>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/daniel-arzanipour/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/DanielArzani">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/team-4.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Fabiola Castaneda G.</h2>
+                  <p>Advisor</p>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/fabicastaneda/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Fabscg">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/arslan_razi.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Joona Lusa</h2>
+                  <p>Advisor</p>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/joona-lusa-b5436b211/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/jlusa101">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-     
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/team-4.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Vladimir Starchenko</h2>
+                  <p>Advisor</p>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/vladimir-starchenko-636016205/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/VladimirStarchenko">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Team End --> */}
+      
+      {/* <!-- Contact Start --> */}
+      <div className="contact">
+        <div className="container">
+          <div className="section-header text-center">
+            <p>Get In Touch</p>
+            <h2>Contact Us!</h2>
+          </div>
+          <div className="contact-img">
+            <img src="/assets/img/contact.jpg" alt="contact" />
+          </div>
+          <div className="contact-form">
+            <div id="success"></div>
+            <form name="sentMessage" id="contactForm" noValidate="noValidate">
+              <div className="control-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required="required"
+                  data-validation-required-message="Please enter your name"
+                />
+                <p className="help-block text-danger"></p>
+              </div>
+              <div className="control-group">
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                  required="required"
+                  data-validation-required-message="Please enter your email"
+                />
+                <p className="help-block text-danger"></p>
+              </div>
+              <div className="control-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  id="subject"
+                  placeholder="Subject"
+                  required="required"
+                  data-validation-required-message="Please enter a subject"
+                />
+                <p className="help-block text-danger"></p>
+              </div>
+              <div className="control-group">
+                <textarea
+                  className="form-control"
+                  id="message"
+                  placeholder="Message"
+                  required="required"
+                  data-validation-required-message="Please enter your message"
+                ></textarea>
+                <p className="help-block text-danger"></p>
+              </div>
+              <div>
+                <button
+                  className="btn btn-custom"
+                  type="submit"
+                  id="sendMessageButton"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Contact End --> */}     
       <Footer />
     </>
   );

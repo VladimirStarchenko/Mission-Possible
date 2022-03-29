@@ -313,7 +313,7 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="/assets/img/joona-dog.jpg" alt="Team" />
+                  <img src="/assets/img/joona-lu.jpg" alt="Team" />
                 </div>
                 <div className="team-text">
                   <h2>Joona Lusa</h2>

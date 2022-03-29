@@ -59,3 +59,19 @@ img {
 #sendMessageButton:hover {
     background-color: #AED9E0 !important;
 }
+#nav-news{
+    color:  #109eb4;
+
+}
+#nav-head{
+    color:  #109eb4;
+}
+#nav-sub{
+    color:  #109eb4;
+}
+#nav-button{
+    background-color: rgb(238, 232, 232);
+}
+#nav-button:hover {
+    background-color: #AED9E0 !important;
+}

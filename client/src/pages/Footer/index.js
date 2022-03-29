@@ -7,7 +7,7 @@ function Footer() {
           <div className="row">
             <div className="col-lg-3 col-md-6">
               <div className="footer-contact">
-                <h2>Our Head Office</h2>
+                <h2 id="nav-head">Our Head Office</h2>
                 <p>
                   <i className="fa fa-map-marker-alt"></i>1345 New Street, Toronto,
                   Canada
@@ -23,7 +23,7 @@ function Footer() {
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="footer-link">
-                <h2>Popular Links</h2>
+                <h2 id="nav-sub">Popular Links</h2>
                 <a href="about">About Us</a>
                 <a href="contact">Contact Us</a>
                 <a href="cause">Popular Causes</a>
@@ -32,13 +32,13 @@ function Footer() {
            
             <div className="col-lg-3 col-md-6">
               <div className="footer-newsletter">
-                <h2>Newsletter</h2>
+                <h2 id="nav-news">Newsletter</h2>
                 <form>
                   <input
                     className="form-control"
                     placeholder="Email goes here"
                   />
-                  <button className="btn btn-custom">Submit</button>
+                  <button id="nav-button" className="btn btn-block">Submit</button>
                   <label>Don't worry, we don't spam!</label>
                 </form>
               </div>

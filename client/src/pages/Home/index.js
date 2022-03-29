@@ -2,6 +2,7 @@ import React from "react";
 // import { useQuery } from "@apollo/client";
 // import { GET_CHARITIES } from "../utils/queries.js";
 import Footer from "../Footer";
+import "./home-index.css";
 
 function Home() {
   // const { data, loading } = useQuery(GET_CHARITIES);
@@ -27,128 +28,10 @@ function Home() {
       })} */}
 
       {/* <!-- Carousel Start --> */}
-      <div className="carousel">
-        <div className="container-fluid">
-          <div className="owl-carousel">
-            <div className="carousel-item">
-              <div className="carousel-img">
-                <img src="/assets/img/carousel-1.jpg" alt="Image" />
-                {/* <img src="../img/carousel-1.jpg" alt="Image" /> */}
-              </div>
-              <div className="carousel-text">
-                <h1>Let's be kind for children</h1>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris.
-                  Vivamus egestas eleifend dui ac consequat at lectus in
-                  malesuada
-                </p>
-                <div className="carousel-btn">
-                  <a className="btn btn-custom" href="#">
-                    Donate Now
-                  </a>
-                  <a
-                    className="btn btn-custom btn-play"
-                    data-toggle="modal"
-                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                    data-target="#videoModal"
-                  >
-                    Watch Video
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="carousel-img">
-                <img src="/assets/img/carousel-2.jpg" alt="Image" />
-              </div>
-              <div className="carousel-text">
-                <h1>Get Involved with helping hand</h1>
-                <p>
-                  Morbi sagittis turpis id suscipit feugiat. Suspendisse eu
-                  augue urna. Morbi sagittis, orci sodales varius fermentum,
-                  tortor
-                </p>
-                <div className="carousel-btn">
-                  <a className="btn btn-custom" href="#">
-                    Donate Now
-                  </a>
-                  <a
-                    className="btn btn-custom btn-play"
-                    data-toggle="modal"
-                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                    data-target="#videoModal"
-                  >
-                    Watch Video
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="carousel-img">
-                <img src="/assets/img/carousel-3.jpg" alt="Image" />
-              </div>
-              <div className="carousel-text">
-                <h1>Bringing smiles to millions</h1>
-                <p>
-                  Sed ultrices, est eget feugiat accumsan, dui nibh egestas
-                  tortor, ut rhoncus nibh ligula euismod quam. Proin
-                  pellentesque odio
-                </p>
-                <div className="carousel-btn">
-                  <a className="btn btn-custom" href="#">
-                    Donate Now
-                  </a>
-                  <a
-                    className="btn btn-custom btn-play"
-                    data-toggle="modal"
-                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                    data-target="#videoModal"
-                  >
-                    Watch Video
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Carousel End --> */}
 
-      {/* <!-- Video Modal Start--> */}
-      <div
-        className="modal fade"
-        id="videoModal"
-        tabIndex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog" role="document">
-          <div className="modal-content">
-            <div className="modal-body">
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-              {/* <!-- 16:9 aspect ratio --> */}
-              <div className="embed-responsive embed-responsive-16by9">
-                <iframe
-                  className="embed-responsive-item"
-                  src=""
-                  id="video"
-                  allowscriptaccess="always"
-                  allow="autoplay"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Video Modal End --> */}
+      {/* <img src="/assets/img/donateBox.jpg" alt="donate box" />  */}
+
+      {/* <!-- Carousel End --> */}
 
       {/* <!-- About Start --> */}
       <div className="about">
@@ -158,75 +41,64 @@ function Home() {
               <div
                 className="about-img"
                 data-parallax="scroll"
-                data-image-src="/assets/img/about.jpg"
+                // data-image-src="/assets/img/facts.jpg"
+                data-image-src="/assets/img/donateBox.jpg"
               ></div>
             </div>
             <div className="col-lg-6">
               <div className="section-header">
-                <p>Learn About Us</p>
-                <h2>Worldwide non-profit charity organization</h2>
+                <p id="learn-subtext">Learn About Us</p>
+                <h2>
+                  A non-profit charity organization working to improve the
+                  causes we care about through donations
+                </h2>
               </div>
               <div className="about-tab">
                 <ul className="nav nav-pills nav-justified">
                   <li className="nav-item">
                     <a
+                      id="vision-mission"
                       className="nav-link active"
                       data-toggle="pill"
                       href="#tab-content-1"
                     >
-                      About
+                      ABOUT
                     </a>
                   </li>
                   <li className="nav-item">
                     <a
+                      id="about-mission"
                       className="nav-link"
                       data-toggle="pill"
                       href="#tab-content-2"
                     >
-                      Mission
+                      MISSION
                     </a>
                   </li>
                   <li className="nav-item">
                     <a
+                      id="vision-tab"
+                      style={{ color: "inherit" }}
                       className="nav-link"
                       data-toggle="pill"
                       href="#tab-content-3"
                     >
-                      Vision
+                      VISION
                     </a>
                   </li>
                 </ul>
 
                 <div className="tab-content">
                   <div id="tab-content-1" className="container tab-pane active">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    vitae pellentesque turpis. Donec in hendrerit dui, vel
-                    blandit massa. Ut vestibulum suscipit cursus. Cras quis
-                    porta nulla, ut placerat risus. Aliquam nec magna eget velit
-                    luctus dictum. Phasellus et felis sed purus tristique
-                    dignissim. Morbi sit amet leo at purus accumsan
-                    pellentesque. Vivamus fermentum nisi vel dapibus blandit.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    We are a non profit organization working to raise money for
+                    various causes throughtout Canada. Benefactors can donate to
+                    the charity of their choice.
                   </div>
                   <div id="tab-content-2" className="container tab-pane fade">
-                    Sed tincidunt, magna ut vehicula volutpat, turpis diam
-                    condimentum justo, posuere congue turpis massa in mi. Proin
-                    ornare at massa at fermentum. Nunc aliquet sed nisi iaculis
-                    ornare. Nam semper tortor eget est egestas, eu sagittis nunc
-                    sodales. Interdum et malesuada fames ac ante ipsum primis in
-                    faucibus. Praesent bibendum sapien sed purus molestie
-                    malesuada. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.
+                    Our mission to take make things possible through donations.
                   </div>
                   <div id="tab-content-3" className="container tab-pane fade">
-                    Aliquam dolor odio, mollis sed feugiat sit amet, feugiat ut
-                    sapien. Nunc eu dignissim lorem. Suspendisse at hendrerit
-                    enim. Interdum et malesuada fames ac ante ipsum primis in
-                    faucibus. Sed condimentum semper turpis vel facilisis. Nunc
-                    vel faucibus orci. Mauris ut mauris rhoncus, efficitur nisi
-                    at, venenatis quam. Praesent egestas pretium enim sit amet
-                    finibus. Curabitur at erat molestie, tincidunt lorem eget,
-                    consequat ligula.
+                    Create change through donations!
                   </div>
                 </div>
               </div>
@@ -237,65 +109,30 @@ function Home() {
       {/* <!-- About End --> */}
 
       {/* <!-- Service Start --> */}
+      <span></span>
       <div className="service">
         <div className="container">
           <div className="section-header text-center">
-            <p>What We Do?</p>
-            <h2>We believe that we can save more lifes with you</h2>
+            <p id="subheader-causes">What We Do?</p>
+            <h2 id="causes-header">
+              Increase donations for the causes we care about
+            </h2>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="service-item">
-                <div className="service-icon">
-                  <i className="flaticon-diet"></i>
-                </div>
-                <div className="service-text">
-                  <h3>Healthy Food</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="service-item">
-                <div className="service-icon">
-                  <i className="flaticon-water"></i>
-                </div>
-                <div className="service-text">
-                  <h3>Pure Water</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="service-item">
-                <div className="service-icon">
-                  <i className="flaticon-healthcare"></i>
-                </div>
-                <div className="service-text">
-                  <h3>Health Care</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
-                  </p>
-                </div>
-              </div>
-            </div>
             <div className="col-lg-4 col-md-6">
               <div className="service-item">
                 <div className="service-icon">
                   <i className="flaticon-education"></i>
                 </div>
                 <div className="service-text">
-                  <h3>Primary Education</h3>
+                  <h3 id="democracy-header">DEMOCRACY NOW!</h3>
                   <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
+                    A media outlet that combines news reporting, interviews,
+                    investigative journalism and political commentary, with a
+                    focus on peace activistism linked to environmental justice
+                    and social justice, guided by the ethics of ecofeminism as a
+                    philosophy. Democracy Now! gives activists and citizens a
+                    platform to debate the system.
                   </p>
                 </div>
               </div>
@@ -306,10 +143,14 @@ function Home() {
                   <i className="flaticon-home"></i>
                 </div>
                 <div className="service-text">
-                  <h3>Residence Facilities</h3>
+                  <h3 id="comic-header">COMIC RELIEF</h3>
                   <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
+                    Comic Relief invests in nonprofit and community-led
+                    organizations with programs focused on tackling the root
+                    causes and consequences of poverty and social injustice. We
+                    support initiatives and policies that advance economic
+                    opportunity and leadership development in communities
+                    directly impacted by intergenerational poverty.
                   </p>
                 </div>
               </div>
@@ -320,10 +161,13 @@ function Home() {
                   <i className="flaticon-social-care"></i>
                 </div>
                 <div className="service-text">
-                  <h3>Social Care</h3>
+                  <h3 id="safe-header">SAFE PASSSSGE</h3>
                   <p>
-                    Lorem ipsum dolor sit amet elit. Phase nec preti facils
-                    ornare velit non metus tortor
+                    Every year thousands of child refugees arrive in Europe,
+                    almost half of them are unaccompanied and as a result are at
+                    risk of being abused and trafficked. Yet many of these
+                    children have a legal right to travel safely to a place of
+                    sanctuary. With our support they can access their rights.
                   </p>
                 </div>
               </div>
@@ -333,498 +177,33 @@ function Home() {
       </div>
       {/* <!-- Service End --> */}
 
-      {/* <!-- Facts Start --> */}
-      <div
-        className="facts"
-        data-parallax="scroll"
-        data-image-src="/assets/img/facts.jpg"
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-home"></i>
-                <div className="facts-text">
-                  <h3 className="facts-plus" data-toggle="counter-up">
-                    150
-                  </h3>
-                  <p>Countries</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-charity"></i>
-                <div className="facts-text">
-                  <h3 className="facts-plus" data-toggle="counter-up">
-                    400
-                  </h3>
-                  <p>Volunteers</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-kindness"></i>
-                <div className="facts-text">
-                  <h3 className="facts-dollar" data-toggle="counter-up">
-                    10000
-                  </h3>
-                  <p>Our Goal</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="facts-item">
-                <i className="flaticon-donation"></i>
-                <div className="facts-text">
-                  <h3 className="facts-dollar" data-toggle="counter-up">
-                    5000
-                  </h3>
-                  <p>Raised</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Facts End --> */}
-
-      {/* <!-- Causes Start --> */}
-      <div className="causes">
-        <div className="container">
-          <div className="section-header text-center">
-            <p>Popular Causes</p>
-            <h2>Let's know about charity causes around the world</h2>
-          </div>
-          <div className="owl-carousel causes-carousel">
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/causes-1.jpg" alt="Image" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/causes-2.jpg" alt="Image" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/causes-3.jpg" alt="Image" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-            <div className="causes-item">
-              <div className="causes-img">
-                <img src="/assets/img/causes-4.jpg" alt="Image" />
-              </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>85%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $100000
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
-              <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
-                </p>
-              </div>
-              <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Causes End --> */}
-
       {/* <!-- Donate Start --> */}
       <div
         className="donate"
         data-parallax="scroll"
-        data-image-src="/assets/img/donate.jpg"
+        // data-image-src="/assets/img/donate.jpg"
       >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7">
               <div className="donate-content">
                 <div className="section-header">
-                  <p>Donate Now</p>
-                  <h2>Let's donate to needy people for better lives</h2>
+                  <p id="donate-subheader">Donate Now</p>
+                  <h2 id="donate-header">
+                    Let's give to a cause to create a better world
+                  </h2>
                 </div>
                 <div className="donate-text">
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.
-                    Curabitur facilisis ornare velit non. Aliquam metus tortor,
-                    auctor id gravida, viverra quis sem. Curabitur non nisl nec
-                    nisi maximus. Aenean convallis porttitor. Aliquam interdum
-                    at lacus non blandit.
+                  <p id="mission-statement">
+                    Mission Possible donates all their funds to charities work
+                    to fight poverty, promote democracy, and advocate for
+                    children refugess.
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-lg-5">
-              <div className="donate-form">
-                <form action ='/donate' method="POST">
-                  <div className="control-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Name"
-                      name="donor"
-                      required="required"
-                    />
-                  </div>
-                  <div className="control-group">
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Email"
-                      required="required"
-                    />
-                  </div>
-                  <div className="control-group">
-                    <input
-                      type="number"
-                      className="form-control"
-                      placeholder="Amount"
-                      name="amount"
-                      required="required"
-                    />
-                  </div>
-                  {/* <div
-                    className="btn-group btn-group-toggle"
-                    data-toggle="buttons"
-                  >
-                    <label className="btn btn-custom active">
-                      <input type="radio" name="options" /> $10
-                    </label>
-                    <label className="btn btn-custom">
-                      <input type="radio" name="options" /> $20
-                    </label>
-                    <label className="btn btn-custom">
-                      <input type="radio" name="options" /> $30
-                    </label>
-                  </div> */}
-
-                  <div>
-                    <button className="btn btn-custom" type="submit">
-                      Donate Now
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Donate End --> */}
-
-      {/* <!-- Event Start --> */}
-      <div className="event">
-        <div className="container">
-          <div className="section-header text-center">
-            <p>Upcoming Events</p>
-            <h2>Be ready for our upcoming charity events</h2>
-          </div>
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="event-item">
-                <img src="/assets/img/event-1.jpg" alt="Image" />
-                <div className="event-content">
-                  <div className="event-meta">
-                    <p>
-                      <i className="fa fa-calendar-alt"></i>01-Jan-45
-                    </p>
-                    <p>
-                      <i className="far fa-clock"></i>8:00 - 10:00
-                    </p>
-                    <p>
-                      <i className="fa fa-map-marker-alt"></i>New York
-                    </p>
-                  </div>
-                  <div className="event-text">
-                    <h3>Lorem ipsum dolor sit</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet elit. Neca pretim miura bitur
-                      facili ornare velit non vulpte liqum metus tortor
-                    </p>
-                    <a className="btn btn-custom" href="#">
-                      Join Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="event-item">
-                <img src="/assets/img/event-2.jpg" alt="Image" />
-                <div className="event-content">
-                  <div className="event-meta">
-                    <p>
-                      <i className="fa fa-calendar-alt"></i>01-Jan-45
-                    </p>
-                    <p>
-                      <i className="far fa-clock"></i>8:00 - 10:00
-                    </p>
-                    <p>
-                      <i className="fa fa-map-marker-alt"></i>New York
-                    </p>
-                  </div>
-                  <div className="event-text">
-                    <h3>Lorem ipsum dolor sit</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet elit. Neca pretim miura bitur
-                      facili ornare velit non vulpte liqum metus tortor
-                    </p>
-                    <a className="btn btn-custom" href="#">
-                      Join Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Event End --> */}
-
-      {/* <!-- Team Start --> */}
-      <div className="team">
-        <div className="container">
-          <div className="section-header text-center">
-            <p>Meet Our Team</p>
-            <h2>Awesome guys behind our charity activities</h2>
-          </div>
-          <div className="row">
-            <div className="col-lg-3 col-md-6">
-              <div className="team-item">
-                <div className="team-img">
-                  <img src="/assets/img/team-1.jpg" alt="Team Image" />
-                </div>
-                <div className="team-text">
-                  <h2>Donald John</h2>
-                  <p>Founder & CEO</p>
-                  <div className="team-social">
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="team-item">
-                <div className="team-img">
-                  <img src="/assets/img/team-2.jpg" alt="Team Image" />
-                </div>
-                <div className="team-text">
-                  <h2>Adam Phillips</h2>
-                  <p>Chef Executive</p>
-                  <div className="team-social">
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="team-item">
-                <div className="team-img">
-                  <img src="/assets/img/team-3.jpg" alt="Team Image" />
-                </div>
-                <div className="team-text">
-                  <h2>Thomas Olsen</h2>
-                  <p>Chef Advisor</p>
-                  <div className="team-social">
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="team-item">
-                <div className="team-img">
-                  <img src="/assets/img/team-4.jpg" alt="Team Image" />
-                </div>
-                <div className="team-text">
-                  <h2>James Alien</h2>
-                  <p>Advisor</p>
-                  <div className="team-social">
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Team End --> */}
-
-      {/* <!-- Volunteer Start --> */}
-      <div
-        className="volunteer"
-        data-parallax="scroll"
-        data-image-src="/assets/img/volunteer.jpg"
-      >
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-5">
-              <div className="volunteer-form">
+              <div id="donate-section" className="donate-form">
                 <form>
                   <div className="control-group">
                     <input
@@ -842,133 +221,169 @@ function Home() {
                       required="required"
                     />
                   </div>
-                  <div className="control-group">
-                    <textarea
-                      className="form-control"
-                      placeholder="Why you want to become a volunteer?"
-                      required="required"
-                    ></textarea>
+                  <div
+                    className="btn-group btn-group-toggle"
+                    data-toggle="buttons"
+                  >
+                    <label className="btn btn-custom active">
+                      <input type="radio" name="options" /> $10
+                    </label>
+                    <label className="btn btn-custom">
+                      <input type="radio" name="options" /> $20
+                    </label>
+                    <label className="btn btn-custom">
+                      <input type="radio" name="options" /> $30
+                    </label>
                   </div>
                   <div>
                     <button className="btn btn-custom" type="submit">
-                      Become a volunteer
+                      Donate Now
                     </button>
                   </div>
                 </form>
               </div>
             </div>
-            <div className="col-lg-7">
-              <div className="volunteer-content">
-                <div className="section-header">
-                  <p>Become A Volunteer</p>
-                  <h2>Let’s make a difference in the lives of others</h2>
-                </div>
-                <div className="volunteer-text">
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.
-                    Curabitur facilisis ornare velit non. Aliquam metus tortor,
-                    auctor id gravida, viverra quis sem. Curabitur non nisl nec
-                    nisi maximus. Aenean convallis porttitor. Aliquam interdum
-                    at lacus non blandit.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-      {/* <!-- Volunteer End --> */}
+      {/* <!-- Donate End --> */}
 
-      {/* <!-- Testimonial Start --> */}
-      <div className="testimonial">
+      {/* <!-- Team Start --> */}
+      <div className="team">
         <div className="container">
           <div className="section-header text-center">
-            <p>Testimonial</p>
-            <h2>What people are talking about our charity activities</h2>
+            <span></span>
+            <h2 id="founders-header">The founders of Mission Possible</h2>
           </div>
-          <div className="owl-carousel testimonials-carousel">
-            <div className="testimonial-item">
-              <div className="testimonial-profile">
-                <img src="/assets/img/testimonial-1.jpg" alt="Image" />
-                <div className="testimonial-name">
-                  <h3>Person Name</h3>
-                  <p>Profession</p>
+          <div className="row">
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/arslan_razi.jpg" alt="Team" />
                 </div>
-              </div>
-              <div className="testimonial-text">
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasel preti mi facilis
-                  ornare velit non vulputa. Aliqu metus tortor, auctor id gravid
-                  vivera quis
-                </p>
+                <div className="team-text">
+                  <h2>Arslan Razi</h2>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/arslanrazi/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/arslan-razi">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="testimonial-item">
-              <div className="testimonial-profile">
-                <img src="/assets/img/testimonial-2.jpg" alt="Image" />
-                <div className="testimonial-name">
-                  <h3>Person Name</h3>
-                  <p>Profession</p>
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/about-me.jpg" alt="Team" />
                 </div>
-              </div>
-              <div className="testimonial-text">
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasel preti mi facilis
-                  ornare velit non vulputa. Aliqu metus tortor, auctor id gravid
-                  vivera quis
-                </p>
+                <div className="team-text">
+                  <h2>Bianca Chami</h2>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/bianca-chami-3ba87a178/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/chamibia">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="testimonial-item">
-              <div className="testimonial-profile">
-                <img src="/assets/img/testimonial-3.jpg" alt="Image" />
-                <div className="testimonial-name">
-                  <h3>Person Name</h3>
-                  <p>Profession</p>
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/daniel-az.jpeg" alt="Team" />
                 </div>
-              </div>
-              <div className="testimonial-text">
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasel preti mi facilis
-                  ornare velit non vulputa. Aliqu metus tortor, auctor id gravid
-                  vivera quis
-                </p>
+                <div className="team-text">
+                  <h2>Daniel Arzanipour</h2>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/daniel-arzanipour/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/DanielArzani">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="testimonial-item">
-              <div className="testimonial-profile">
-                <img src="/assets/img/testimonial-4.jpg" alt="Image" />
-                <div className="testimonial-name">
-                  <h3>Person Name</h3>
-                  <p>Profession</p>
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/fabi-team.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Fabiola Castaneda G.</h2>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/fabicastaneda/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Fabscg">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div className="testimonial-text">
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasel preti mi facilis
-                  ornare velit non vulputa. Aliqu metus tortor, auctor id gravid
-                  vivera quis
-                </p>
+            </div>
+
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/joona-dog.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Joona Lusa</h2>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/joona-lusa-b5436b211/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/jlusa101">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6">
+              <div className="team-item">
+                <div className="team-img">
+                  <img src="/assets/img/vlad-avatar.jpg" alt="Team" />
+                </div>
+                <div className="team-text">
+                  <h2>Vladimir Starchenko</h2>
+                  <div className="team-social">
+                    <a href="https://www.linkedin.com/in/vladimir-starchenko-636016205/">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/VladimirStarchenko">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <!-- Testimonial End --> */}
+      {/* <!-- Team End --> */}
 
       {/* <!-- Contact Start --> */}
       <div className="contact">
         <div className="container">
           <div className="section-header text-center">
-            <p>Get In Touch</p>
-            <h2>Contact for any query</h2>
+            <p id="contact-header">Get In Touch</p>
+            <h2 id="contact-subheader">Contact Us!</h2>
           </div>
           <div className="contact-img">
-            <img src="/assets/img/contact.jpg" alt="Image" />
+            <img src="/assets/img/contact.jpg" alt="contact" />
           </div>
           <div className="contact-form">
             <div id="success"></div>
-            <form name="sentMessage" id="contactForm" noValidate="novalidate">
+            <form name="sentMessage" id="contactForm" noValidate="noValidate">
               <div className="control-group">
                 <input
                   type="text"
@@ -1014,7 +429,7 @@ function Home() {
               </div>
               <div>
                 <button
-                  className="btn btn-custom"
+                  className="btn btn-block"
                   type="submit"
                   id="sendMessageButton"
                 >

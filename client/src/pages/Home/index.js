@@ -593,7 +593,12 @@ function Home() {
       {/* <!-- Team End --> */}
 
       {/* <!-- Contact Start --> */}
-      <div className="contact">
+      {/* Our sever is blocking requests, configure headers properly */}
+      <form
+        className="contact"
+        action="https://formsubmit.co/daniel.arzanipour@gmail.com"
+        method="POST"
+      >
         <div className="container">
           <div className="section-header text-center">
             <p id="contact-header">Get In Touch</p>
@@ -610,6 +615,7 @@ function Home() {
                   type="text"
                   className="form-control"
                   id="name"
+                  name="name"
                   placeholder="Your Name"
                   required="required"
                   data-validation-required-message="Please enter your name"
@@ -621,6 +627,7 @@ function Home() {
                   type="email"
                   className="form-control"
                   id="email"
+                  name="email"
                   placeholder="Your Email"
                   required="required"
                   data-validation-required-message="Please enter your email"
@@ -632,6 +639,7 @@ function Home() {
                   type="text"
                   className="form-control"
                   id="subject"
+                  name="subject"
                   placeholder="Subject"
                   required="required"
                   data-validation-required-message="Please enter a subject"
@@ -642,6 +650,7 @@ function Home() {
                 <textarea
                   className="form-control"
                   id="message"
+                  name="message"
                   placeholder="Message"
                   required="required"
                   data-validation-required-message="Please enter your message"
@@ -660,7 +669,7 @@ function Home() {
             </form>
           </div>
         </div>
-      </div>
+      </form>
       {/* <!-- Contact End --> */}
       <Footer />
     </>

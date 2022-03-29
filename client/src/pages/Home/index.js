@@ -5,33 +5,130 @@ import Footer from "../Footer";
 import "./home-index.css";
 
 function Home() {
-  // const { data, loading } = useQuery(GET_CHARITIES);
-
-  // if (loading) {
-  //   return <h2>LOADING...</h2>;
-  // }
-  // const { allCharities } = data;
-
   return (
     <>
-      {/* {allCharities.map((charity) => {
-        return (
-          <ul key={Math.random()}>
-            <li>
-              <strong>{charity.name}</strong>
-            </li>
-            <li>{charity.mission}</li>
-            <li>{charity.charityNavigatorURL}</li>
-            <li>{charity.websiteURL}</li>
-          </ul>
-        );
-      })} */}
-
       {/* <!-- Carousel Start --> */}
-
-      {/* <img src="/assets/img/donateBox.jpg" alt="donate box" />  */}
-
+      <div className="carousel">
+        <div className="container-fluid">
+          <div className="owl-carousel">
+            <div className="carousel-item">
+              <div className="carousel-img">
+                <img src="/assets/img/carousel-1.jpg" alt="Image" />
+              </div>
+              <div className="carousel-text">
+                <h1>Let's be kind for children</h1>
+                <p>
+                  Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris.
+                  Vivamus egestas eleifend dui ac consequat at lectus in
+                  malesuada
+                </p>
+                <div className="carousel-btn">
+                  <a className="btn btn-custom" href="">
+                    Donate Now
+                  </a>
+                  <a
+                    className="btn btn-custom btn-play"
+                    data-toggle="modal"
+                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                    data-target="#videoModal"
+                  >
+                    Watch Video
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className="carousel-img">
+                <img src="/assets/img/carousel-2.jpg" alt="Image" />
+              </div>
+              <div className="carousel-text">
+                <h1>Get Involved with helping hand</h1>
+                <p>
+                  Morbi sagittis turpis id suscipit feugiat. Suspendisse eu
+                  augue urna. Morbi sagittis, orci sodales varius fermentum,
+                  tortor
+                </p>
+                <div className="carousel-btn">
+                  <a className="btn btn-custom" href="">
+                    Donate Now
+                  </a>
+                  <a
+                    className="btn btn-custom btn-play"
+                    data-toggle="modal"
+                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                    data-target="#videoModal"
+                  >
+                    Watch Video
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className="carousel-img">
+                <img src="/assets/img/carousel-3.jpg" alt="Image" />
+              </div>
+              <div className="carousel-text">
+                <h1>Bringing smiles to millions</h1>
+                <p>
+                  Sed ultrices, est eget feugiat accumsan, dui nibh egestas
+                  tortor, ut rhoncus nibh ligula euismod quam. Proin
+                  pellentesque odio
+                </p>
+                <div className="carousel-btn">
+                  <a className="btn btn-custom" href="">
+                    Donate Now
+                  </a>
+                  <a
+                    className="btn btn-custom btn-play"
+                    data-toggle="modal"
+                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                    data-target="#videoModal"
+                  >
+                    Watch Video
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* <!-- Carousel End --> */}
+
+      {/* <!-- Video Modal Start--> */}
+      <div
+        className="modal fade"
+        id="videoModal"
+        tabIndex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-body">
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {/* <!-- 16:9 aspect ratio --> */}
+              <div className="embed-responsive embed-responsive-16by9">
+                <iframe
+                  className="embed-responsive-item"
+                  src=""
+                  id="video"
+                  allowscriptaccess="always"
+                  allow="autoplay"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Video Modal End --> */}
 
       {/* <!-- About Start --> */}
       <div className="about">

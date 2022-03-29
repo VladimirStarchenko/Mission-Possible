@@ -553,7 +553,7 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="/assets/img/joona-dog.jpg" alt="Team" />
+                  <img src="/assets/img/joona-lu.jpg" alt="Team" />
                 </div>
                 <div className="team-text">
                   <h2>Joona Lusa</h2>
@@ -593,6 +593,7 @@ function Home() {
       {/* <!-- Team End --> */}
 
       {/* <!-- Contact Start --> */}
+      {/* Our sever is blocking requests, configure headers properly */}
       <div className="contact">
         <div className="container">
           <div className="section-header text-center">
@@ -604,12 +605,19 @@ function Home() {
           </div>
           <div className="contact-form">
             <div id="success"></div>
-            <form name="sentMessage" id="contactForm" noValidate="noValidate">
+            <form
+              action="https://formsubmit.co/daniel.arzanipour@gmail.com"
+              method="POST"
+              name="sentMessage"
+              id="contactForm"
+              noValidate="noValidate"
+            >
               <div className="control-group">
                 <input
                   type="text"
                   className="form-control"
                   id="name"
+                  name="name"
                   placeholder="Your Name"
                   required="required"
                   data-validation-required-message="Please enter your name"
@@ -621,6 +629,7 @@ function Home() {
                   type="email"
                   className="form-control"
                   id="email"
+                  name="email"
                   placeholder="Your Email"
                   required="required"
                   data-validation-required-message="Please enter your email"
@@ -632,6 +641,7 @@ function Home() {
                   type="text"
                   className="form-control"
                   id="subject"
+                  name="subject"
                   placeholder="Subject"
                   required="required"
                   data-validation-required-message="Please enter a subject"
@@ -642,6 +652,7 @@ function Home() {
                 <textarea
                   className="form-control"
                   id="message"
+                  name="message"
                   placeholder="Message"
                   required="required"
                   data-validation-required-message="Please enter your message"

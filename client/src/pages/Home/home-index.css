@@ -1,6 +1,3 @@
-body {
-  background-color: #faf3dd;
-}
 #learn-subtext {
   color: #ffa69e !important;
 }
@@ -60,5 +57,21 @@ img {
   background-color: #aed9e0 !important;
 }
 .carousel {
-  background: #faf3dd;
+  background: #fff;
+}
+
+#nav-news {
+  color: #109eb4;
+}
+#nav-head {
+  color: #109eb4;
+}
+#nav-sub {
+  color: #109eb4;
+}
+#nav-button {
+  background-color: rgb(238, 232, 232);
+}
+#nav-button:hover {
+  background-color: #aed9e0 !important;
 }

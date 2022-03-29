@@ -553,7 +553,7 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="/assets/img/joona-dog.jpg" alt="Team" />
+                  <img src="/assets/img/joona-lu.jpg" alt="Team" />
                 </div>
                 <div className="team-text">
                   <h2>Joona Lusa</h2>
@@ -594,11 +594,7 @@ function Home() {
 
       {/* <!-- Contact Start --> */}
       {/* Our sever is blocking requests, configure headers properly */}
-      <form
-        className="contact"
-        action="https://formsubmit.co/daniel.arzanipour@gmail.com"
-        method="POST"
-      >
+      <div className="contact">
         <div className="container">
           <div className="section-header text-center">
             <p id="contact-header">Get In Touch</p>
@@ -609,7 +605,13 @@ function Home() {
           </div>
           <div className="contact-form">
             <div id="success"></div>
-            <form name="sentMessage" id="contactForm" noValidate="noValidate">
+            <form
+              action="https://formsubmit.co/daniel.arzanipour@gmail.com"
+              method="POST"
+              name="sentMessage"
+              id="contactForm"
+              noValidate="noValidate"
+            >
               <div className="control-group">
                 <input
                   type="text"
@@ -669,7 +671,7 @@ function Home() {
             </form>
           </div>
         </div>
-      </form>
+      </div>
       {/* <!-- Contact End --> */}
       <Footer />
     </>

@@ -43,9 +43,8 @@ body {
 #founders-header {
     color:  #FFA69E;;
 }
-img {
-    width: 300px;
-    height: 300px;
+.avatar{
+    width:100%;
 }
 #contact-header {
     color: black;

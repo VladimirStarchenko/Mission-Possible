@@ -1081,13 +1081,14 @@ a:focus {
   margin: -15px 0 0 0;
 }
 
+
 .team .team-text {
   position: absolute;
   width: calc(100% - 40px);
-  height: 96px;
+  height: 40px;
   bottom: 0;
   left: 20px;
-  padding: 22px 0;
+  padding: 15px 0;
   text-align: center;
   background: #ffffff;
   transition: 0.3s;
@@ -1098,6 +1099,9 @@ a:focus {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
+}
+.avatar img{
+  width:100%;
 }
 
 .team .team-text p {
@@ -1122,10 +1126,13 @@ a:focus {
   transition: 0.3s;
 }
 
+
 .team .team-social a:hover {
   color: #20212b;
   background: #fdbe33;
 }
+
+
 
 .team .team-item:hover .team-text {
   height: 160px;

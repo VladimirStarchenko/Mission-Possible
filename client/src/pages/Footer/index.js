@@ -49,7 +49,7 @@ function Footer() {
           <div className="row">
             <div className="col-md-6">
               <p>
-                &copy; <a href="#">Mission: Possible</a>, All Right Reserved.
+                &copy; <a href="#">Mission Possible</a>, All Right Reserved.
               </p>
             </div>
           </div>

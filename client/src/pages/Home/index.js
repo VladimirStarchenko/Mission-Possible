@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       {/* <!-- Carousel Start --> */}
-      <div className="carousel">
+      {/* <div className="carousel">
         <div className="container-fluid">
           <div className="owl-carousel">
             <div className="carousel-item">
@@ -91,7 +91,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <!-- Carousel End --> */}
 
       {/* <!-- Video Modal Start--> */}
@@ -600,8 +600,8 @@ function Home() {
             <p id="contact-header">Get In Touch</p>
             <h2 id="contact-subheader">Contact Us!</h2>
           </div>
-          <div className="contact-img">
-            <img src="/assets/img/contact.jpg" alt="contact" />
+          <div id="contact-header" className="contact-img">
+            <img src="/assets/img/contact-image.jpg" alt="contact" />
           </div>
           <div className="contact-form">
             <div id="success"></div>

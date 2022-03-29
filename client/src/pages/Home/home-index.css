@@ -54,11 +54,12 @@ img {
   background-color: rgb(238, 232, 232);
 }
 #sendMessageButton:hover {
-  background-color: #aed9e0 !important;
+  background-color: #c2edf4 !important;
 }
 .carousel {
   background: #fff;
 }
+
 
 #nav-news {
   color: #109eb4;
@@ -75,3 +76,7 @@ img {
 #nav-button:hover {
   background-color: #aed9e0 !important;
 }
+#donate-now{
+  background-color: white;
+}
+

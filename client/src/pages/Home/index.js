@@ -308,15 +308,14 @@ function Home() {
                 </div>
               </div>
               <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
+                <h3>Democracy Now!</h3>
                 <p>
                   Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
                   Curabit facilis ornare velit non vulputa
                 </p>
               </div>
               <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
+                <a className="btn btn-custom w-100" href="https://www.democracynow.org/">Learn More</a>
               </div>
             </div>
             <div className="causes-item">
@@ -345,15 +344,14 @@ function Home() {
                 </div>
               </div>
               <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
+                <h3>Comic Relief</h3>
                 <p>
                   Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
                   Curabit facilis ornare velit non vulputa
                 </p>
               </div>
               <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
+              <a className="btn btn-custom w-100" href="https://www.comicrelief.com/">Learn More</a>
               </div>
             </div>
             <div className="causes-item">
@@ -382,15 +380,14 @@ function Home() {
                 </div>
               </div>
               <div className="causes-text">
-                <h3>Lorem ipsum dolor sit</h3>
+                <h3>Safe Passage</h3>
                 <p>
                   Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
                   Curabit facilis ornare velit non vulputa
                 </p>
               </div>
               <div className="causes-btn">
-                <a className="btn btn-custom">Learn More</a>
-                <a className="btn btn-custom">Donate Now</a>
+                <a className="btn btn-custom w-100" href="https://safe-passage.ca/">Learn More</a>
               </div>
             </div>
           </div>
@@ -425,12 +422,13 @@ function Home() {
             </div>
             <div className="col-lg-5">
               <div id="donate-section" className="donate-form">
-                <form>
+                <form action="./donate" method="POST">
                   <div className="control-group">
                     <input
                       type="text"
                       className="form-control"
                       placeholder="Name"
+                      name="donor"
                       required="required"
                     />
                   </div>
@@ -442,19 +440,14 @@ function Home() {
                       required="required"
                     />
                   </div>
-                  <div
-                    className="btn-group btn-group-toggle"
-                    data-toggle="buttons"
-                  >
-                    <label className="btn btn-custom active">
-                      <input type="radio" name="options" /> $10
-                    </label>
-                    <label className="btn btn-custom">
-                      <input type="radio" name="options" /> $20
-                    </label>
-                    <label className="btn btn-custom">
-                      <input type="radio" name="options" /> $30
-                    </label>
+                  <div className="control-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="$ Amount"
+                      name="amount"
+                      required="required"
+                    />
                   </div>
                   <div>
                     <button className="btn btn-custom" type="submit">

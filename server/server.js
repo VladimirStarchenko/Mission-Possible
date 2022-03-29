@@ -41,8 +41,6 @@ if (process.env.NODE_ENV === "production") {
 const stripe = require("stripe")(
   "sk_test_51KgdiPLjNl0PfVF02aF7hfVDXiNDAXFcTcttw3ECXHqyRrA3Jb3gGA91IFOyEEIh5tjmnSqoc3zufbvzIXx2VLN200hJ9AWkvi"
 );
-const SK = process.env.REACT_APP_SK;
-console.log(SK);
 
 // POST request to make a payment/donation to a charity, through Stripe checkout window
 app.post("/donate", async (req, res) => {
@@ -66,8 +64,8 @@ app.post("/donate", async (req, res) => {
       ],
       mode: "payment",
       // Redirect back to homepage, temp links at the moment
-      success_url: "http://localhost:3000/saved",
-      cancel_url: "http://localhost:3000/saved",
+      success_url: "http://localhost:3000/",
+      cancel_url: "http://localhost:3000/",
     });
 
     res.redirect(303, session.url);

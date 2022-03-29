@@ -5,9 +5,7 @@ import StripePayment from "./components/StripePayment";
 
 import AppNavbar from "./components/Navbar";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Causes from "./pages/Causes";
+
 
 import {
   ApolloClient,
@@ -37,29 +35,16 @@ const client = new ApolloClient({
 });
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("Home");
-  function renderPage() {
-    if (currentPage === "Home") {
-      return <Home />;
-    } else if (currentPage === "About") {
-      return <About />;
-    } else if (currentPage === "Contact") {
-      return <Contact />;
-    } else if (currentPage === "Causes") {
-      return <Causes />;
-    } else {
-      return <Home />;
-    }
-  }
+  
   return (
     <ApolloProvider client={client}>
       <>
         <Router>
           <>
             <>
-              <AppNavbar setCurrentPage={setCurrentPage} />
-              {renderPage()}
+              <AppNavbar ></AppNavbar>
             </>
+            <Home></Home>
             <Switch>
               {/* <Route exact path='/' component={ SearchBooks } /> */}
               {

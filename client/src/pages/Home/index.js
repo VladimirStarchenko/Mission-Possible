@@ -2,6 +2,7 @@ import React from "react";
 // import { useQuery } from "@apollo/client";
 // import { GET_CHARITIES } from "../utils/queries.js";
 import Footer from "../Footer";
+import './home-index.css';
 
 function Home() {
   // const { data, loading } = useQuery(GET_CHARITIES);
@@ -45,41 +46,43 @@ function Home() {
               <div
                 className="about-img"
                 data-parallax="scroll"
-                data-image-src="/assets/img/facts.jpg"
+                // data-image-src="/assets/img/facts.jpg"
+                data-image-src='/assets/img/donateBox.jpg'
               ></div>
             </div>
             <div className="col-lg-6">
               <div className="section-header">
-                <p>Learn About Us</p>
-                <h2>A non-profit charity organization working to solve the issues we care about through donations</h2>
+                <p id='learn-subtext'>Learn About Us</p>
+                <h2>A non-profit charity organization working to improve the causes we care about through donations</h2>
               </div>
               <div className="about-tab">
                 <ul className="nav nav-pills nav-justified">
                   <li className="nav-item">
-                    <a
+                    <a id="vision-mission" 
                       className="nav-link active"
                       data-toggle="pill"
                       href="#tab-content-1"
                     >
-                      About
+                      ABOUT
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a
+                    <a id="about-mission" 
                       className="nav-link"
                       data-toggle="pill"
                       href="#tab-content-2"
                     >
-                      Mission
+                      MISSION
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a
+                    <a id="vision-tab" 
+                    style={{color:"inherit"}}
                       className="nav-link"
                       data-toggle="pill"
                       href="#tab-content-3"
                     >
-                      Vision
+                      VISION
                     </a>
                   </li>
                 </ul>
@@ -108,8 +111,8 @@ function Home() {
       <div className="service">
         <div className="container">
           <div className="section-header text-center">
-            <p>What We Do?</p>
-            <h2>Increase donations for the causes we care about</h2>
+            <p id="subheader-causes">What We Do?</p>
+            <h2 id="causes-header">Increase donations for the causes we care about</h2>
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-6">
@@ -118,9 +121,9 @@ function Home() {
                   <i className="flaticon-education"></i>
                 </div>
                 <div className="service-text">
-                  <h3>DEMOCRACY NOW!</h3>
+                  <h3 id="democracy-header">DEMOCRACY NOW!</h3>
                   <p>
-                    An American TV, radio and internet news programs that combines news reporting, interviews, investigative journalism and political commentary, with a focus on peace activistism linked to environmental justice and social justice, guided by the ethics of ecofeminism as a philosophy. Democracy Now! gives activists and citizens a platform to debate "The Establishment". 
+                    A media outlet that combines news reporting, interviews, investigative journalism and political commentary, with a focus on peace activistism linked to environmental justice and social justice, guided by the ethics of ecofeminism as a philosophy. Democracy Now! gives activists and citizens a platform to debate the system. 
                   </p>
                 </div>
               </div>
@@ -131,7 +134,7 @@ function Home() {
                   <i className="flaticon-home"></i>
                 </div>
                 <div className="service-text">
-                  <h3>COMIC RELIEF</h3>
+                  <h3 id="comic-header">COMIC RELIEF</h3>
                   <p>
                   Comic Relief invests in nonprofit and community-led organizations with programs focused on tackling the root causes and consequences of poverty and social injustice. We support initiatives and policies that advance economic opportunity and leadership development in communities directly impacted by intergenerational poverty.
                   </p>
@@ -144,7 +147,7 @@ function Home() {
                   <i className="flaticon-social-care"></i>
                 </div>
                 <div className="service-text">
-                  <h3>SAFE PASSSSGE</h3>
+                  <h3 id="safe-header">SAFE PASSSSGE</h3>
                   <p>
                   Every year thousands of child refugees arrive in Europe, almost half of them are unaccompanied and as a result are at risk of being abused and trafficked. Yet many of these children have a legal right to travel safely to a place of sanctuary. With our support they can access their rights. 
                   </p>
@@ -167,18 +170,19 @@ function Home() {
             <div className="col-lg-7">
               <div className="donate-content">
                 <div className="section-header">
-                  <p>Donate Now</p>
-                  <h2>Let's donate to create a better world</h2>
+                  <p id="donate-subheader">Donate Now</p>
+                  <h2 id=
+                  "donate-header">Let's give to a cause to create a better world</h2>
                 </div>
                 <div className="donate-text">
-                  <p>
-                    Mission:Possible focuses on causes that fight poverty, promote democracy, and advocate for children refugess.
+                  <p id="mission-statement">
+                    Mission Possible donates all their funds to charities work to fight poverty, promote democracy, and advocate for children refugess.
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-lg-5">
-              <div className="donate-form">
+              <div id="donate-section" className="donate-form">
                 <form>
                   <div className="control-group">
                     <input
@@ -223,22 +227,23 @@ function Home() {
       </div>
       {/* <!-- Donate End --> */}
 
+      
+
     {/* <!-- Team Start --> */}
   <div className="team">
         <div className="container">
           <div className="section-header text-center">
             <span></span>
-            <h2>The founders of Mission:Possible</h2>
+            <h2 id="founders-header">The founders of Mission Possible</h2>
           </div>
           <div className="row">
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="/assets/img/team-1.jpg" alt="Team" />
+                <img src="/assets/img/arslan_razi.jpg" alt="Team" />
                 </div>
                 <div className="team-text">
                   <h2>Arslan Razi</h2>
-                  <p>Founder & CEO</p>
                   <div className="team-social">
                     <a href="https://www.linkedin.com/in/arslanrazi/">
                       <i className="fab fa-linkedin-in"></i>
@@ -253,11 +258,10 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="/assets/img/team-2.jpg" alt="Team" />
+                <img src="/assets/img/about-me.jpg" alt="Team" />
                 </div>
                 <div className="team-text">
                   <h2>Bianca Chami</h2>
-                  <p>Chef Executive</p>
                   <div className="team-social">
                     <a href="https://www.linkedin.com/in/bianca-chami-3ba87a178/">
                       <i className="fab fa-linkedin-in"></i>
@@ -272,11 +276,10 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="/assets/img/team-3.jpg" alt="Team" />
+                <img src="/assets/img/daniel-az.jpeg" alt="Team" />
                 </div>
                 <div className="team-text">
                   <h2>Daniel Arzanipour</h2>
-                  <p>Chef Advisor</p>
                   <div className="team-social">
                     <a href="https://www.linkedin.com/in/daniel-arzanipour/">
                       <i className="fab fa-linkedin-in"></i>
@@ -291,11 +294,10 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="/assets/img/team-4.jpg" alt="Team" />
+                  <img src="/assets/img/fabi-team.jpg" alt="Team" />
                 </div>
                 <div className="team-text">
                   <h2>Fabiola Castaneda G.</h2>
-                  <p>Advisor</p>
                   <div className="team-social">
                     <a href="https://www.linkedin.com/in/fabicastaneda/">
                       <i className="fab fa-linkedin-in"></i>
@@ -311,11 +313,10 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="/assets/img/arslan_razi.jpg" alt="Team" />
+                  <img src="/assets/img/joona-dog.jpg" alt="Team" />
                 </div>
                 <div className="team-text">
                   <h2>Joona Lusa</h2>
-                  <p>Advisor</p>
                   <div className="team-social">
                     <a href="https://www.linkedin.com/in/joona-lusa-b5436b211/">
                       <i className="fab fa-linkedin-in"></i>
@@ -331,11 +332,10 @@ function Home() {
             <div className="col-lg-3 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="/assets/img/team-4.jpg" alt="Team" />
+                  <img src="/assets/img/vlad-avatar.jpg" alt="Team" />
                 </div>
                 <div className="team-text">
                   <h2>Vladimir Starchenko</h2>
-                  <p>Advisor</p>
                   <div className="team-social">
                     <a href="https://www.linkedin.com/in/vladimir-starchenko-636016205/">
                       <i className="fab fa-linkedin-in"></i>
@@ -356,8 +356,8 @@ function Home() {
       <div className="contact">
         <div className="container">
           <div className="section-header text-center">
-            <p>Get In Touch</p>
-            <h2>Contact Us!</h2>
+            <p id="contact-header">Get In Touch</p>
+            <h2 id="contact-subheader">Contact Us!</h2>
           </div>
           <div className="contact-img">
             <img src="/assets/img/contact.jpg" alt="contact" />
@@ -409,8 +409,8 @@ function Home() {
                 <p className="help-block text-danger"></p>
               </div>
               <div>
-                <button
-                  className="btn btn-custom"
+                <button 
+                  className="btn btn-block"
                   type="submit"
                   id="sendMessageButton"
                 >

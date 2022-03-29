@@ -1,0 +1,61 @@
+body {
+    background-color: #FAF3DD;
+}
+#learn-subtext {
+    color: #FFA69E !important;
+}
+#vision-mission {
+    color: #109eb4
+}
+#about-mission {
+    color:  #109eb4
+}
+#vision-tab {
+    color: #109eb4!important
+}
+#subheader-causes {
+    color: black
+}
+#causes-header {
+    color: #FFA69E !important;
+}
+#democracy-header{
+    color:  #109eb4;
+}
+#comic-header {
+    color:  #109eb4;
+}
+#safe-header{
+    color:  #109eb4;
+}
+#donate-subheader{
+    color: black
+}
+#donate-header{
+    color: #FFA69E;
+}
+#mission-statement{
+    color: black;
+}
+#donate-section {
+    background-color: #AED9E0
+}
+#founders-header {
+    color:  #FFA69E;;
+}
+img {
+    width: 300px;
+    height: 300px;
+}
+#contact-header {
+    color: black;
+}
+#contact-subheader{
+    color: #FFA69E; 
+}
+#sendMessageButton{
+    background-color: rgb(238, 232, 232);
+}
+#sendMessageButton:hover {
+    background-color: #AED9E0 !important;
+}

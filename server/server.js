@@ -64,8 +64,8 @@ app.post("/donate", async (req, res) => {
       ],
       mode: "payment",
       // Redirect back to homepage, temp links at the moment
-      success_url: "http://localhost:3000/",
-      cancel_url: "http://localhost:3000/",
+      success_url: "https://glacial-cliffs-90348.herokuapp.com/",
+      cancel_url: "https://glacial-cliffs-90348.herokuapp.com/",
     });
 
     res.redirect(303, session.url);

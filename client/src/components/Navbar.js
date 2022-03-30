@@ -9,12 +9,15 @@ import Auth from "../utils/auth";
 
 import { useQuery, useMutation } from "@apollo/react-hooks";
 import { GET_ME } from "../utils/queries";
+import { DELETE_USER } from "../utils/mutations";
 
 const AppNavbar = () => {
   // set modal display state
   const { loading, data: userData, refetch } = useQuery(GET_ME);
   const [showModal, setShowModal] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
+  // delete user
+  const [deleteUser, { error }] = useMutation(DELETE_USER);
 
   function openModal() {
     refetch();
@@ -22,6 +25,12 @@ const AppNavbar = () => {
       setShowSettingsModal(true);
     }
   }
+
+  // Delete user upon button click
+  const handleDelete = async (e) => {
+    await deleteUser();
+    Auth.logout();
+  };
 
   return (
     <>
@@ -41,6 +50,7 @@ const AppNavbar = () => {
                 <>
                   <Nav.Link onClick={() => openModal()}>Settings</Nav.Link>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
+                  <Nav.Link onClick={handleDelete}>Delete Account</Nav.Link>
                 </>
               ) : (
                 <Nav.Link onClick={() => setShowModal(true)}>

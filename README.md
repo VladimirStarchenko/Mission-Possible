@@ -1,63 +1,95 @@
-# Mission-Possible
+# Mission Possible
 
-## USER STORY
+
+![App preview](./client/public/assets/img/screenshot.png)
+
+## Table of Contents
+
+- [Description](#description)
+- [Purpose](#purpose)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Licenses ](#licenses)
+- [Installation](#installation)
+- [Contributors](#contributors)
+
+## Description
+
+The purpose of this application is to help people find reputable charities who are doing great work for causes around the world. 
+
+This React single-page application was built using Performant JS, a NoSQL database, service workers to make it a progressive web application, we also used Apollo GraphQL, Concurrent servers and JWT for Authentication.
+
+Mobile-first design is built on the fact that users increasingly use their mobile devices to interact with web applications. An application that provides users with the best performance and flexibility is likely to win out over its competitors.
+
+
+## Purpose
 
 ```
+<<<<<<< HEAD
 AS A BENEFACTOR I WANT TO MAKE DONATIONS THAT WILL DIRECTLY GO TO A CHARITY OR ORGANIZATION OF MY CHOICE
 
 AS A CHARITY ORGANIZER I WANT TO BE ABLE TO RAISE AWARENESS FOR A CHARITY/ORGANIZATION BY ALLOWING BENEFACTORS TO CHOOSE THE CHARITY OF THEIR CHOICE
+=======
+As a benefactor, I want to make donations to reputable charities of my choice, so that I can donate to  deserving  causes. 
+
+>>>>>>> develop
 ```
-## REQUIREMENTS
 
-Project 03: Coding Requirements 
-- Must use GraphQL with a Node.js and Express.js server. 
-- Must use MongoDB and the Mongoose ODM for the database. 
-- Must use queries and mutations for retrieving, adding, updating, and deleting data. 
-- Must be deployed using Heroku (with data). 
-- Must have a polished UI. 
-- Must be interactive (i.e., accept and respond to user input). 
-- Must Include authentication (using JWT). 
+## Deployment
 
-Project 03: Additional Requirements 
-
-- Must protect sensitive API key information on the server. 
-- Must have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application). 
-- Must have a clean repository that meets high-quality coding standards. 
-- Must look professional and be mobile-friendly. 
-
-CSS Styling (OPTIONAL) 
-Instead of using a CSS library like Bootstrap, consider one of the following suggestions: 
-- Look into the concept of CSS-in-JS, which abstracts CSS to the component level. Popular libraries include styled-components and Emotion. 
-- Try using a component library, such as Semantic UI, Chakra Ul, or Ant Design. 
-- Create all the CSS for your application just using CSS. 
-- Regardless of whether you choose any of these options, your project needs to look professional and be mobile-friendly. 
-
-Payment Platform (OPTIONAL) 
-- Consider integrating the Stripe payment platform. Even if you don't create an e-commerce application, you could use Stripe to set up your site to accept charitable donations. 
+<!-- Update this link -->
+A deployed version of this app can be accessed by clicking this [link](http://www.google.ca) 
 
 
-Bonus 
-Although this is not a requirement for your project. see if you can also implement functionality to meet the minimum requirements of a PWA 
-- Uses a web manifest. 
-- Uses a service worker for offline functionality. 
-- Is installable. 
-Fulfilling all three requirements to turn your app into a PWA will add 10 points to your grade! 
 
-Presentation Requirements 
-You will be responsible for preparing a format 10-minute presentation that covers the following: 
-- Elevator pitch: a one-minute description of your application. 
-- Concept: What is your user story? What was your motivation for development? 
-- Process: What technologies did you use? How did you break down and assign tasks and roles? What challenges did you encounter? What were your successes? 
-- Demo: Show your stuff! 
-- Directions for future development. 
-- Links to to the deployed application and the GitHub repository. 
+## Usage
 
- 
-Project Metrics Your project will be evaluated In the following: 
-- Concept 
-- Design (application quality) 
-- Functionality (meets all technical acceptance criteria) 
-- Presentation
-- Collaboration 
-- Repository quality 
-- Deployment 
+- Create an account to donate to different charities.
+- Scroll through the available charities. 
+- Read more info about charities by clicking learn more to go to their official sites.  
+- Click Donate Button to donate to you selected charity.
+- Click Settings to update your account information. 
+- Click Contact Us to reach us. 
+
+
+## Technologies
+
+| Server-Side           | Client-Side   |
+| --------------------- | ------------- |
+| Apollo-Server-Express | Apollo        |
+| Bcrypt                | React-BootStrap    |
+| Express               | React         |
+| GraphQL               | Stripe        |
+| JSON Web Tokens       | Service Workers    |
+| Mongoose              |               |
+| Axios                 |               |
+
+
+## Features
+
+- Application is both desktop and mobile friendly.
+- PWA allows the app to be used on the go.
+
+
+## Licenses
+
+Published under the MIT license.
+
+## Installation
+
+- Run `git clone` from this repository: 
+- Run `npm install` to install dependencies.
+- `npm run develop` will create a development build to experiment with.
+- Access the local dev build on http://localhost:3000/ (default).
+- If you'd like to play with the API you can access it at http://localhost:3001/graphql
+
+## Contributors
+
+Arslan Razi, Bianca Chami, Daniel Arzanipour, Fabiola Castaneda, Joona Lusa, Vladimir Starchenko
+
+
+
+
+

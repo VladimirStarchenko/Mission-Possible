@@ -187,15 +187,15 @@ function Home() {
 
                 <div className="tab-content">
                   <div id="tab-content-1" className="container tab-pane active">
-                    We are a non profit organization working to raise money for
+                    We are a charity organization working to raise money for
                     various causes throughtout Canada. Benefactors can donate to
-                    the charity of their choice.
+                    the charity of their choice. We always think about helping because making little donation, can make a great change in the world.
                   </div>
                   <div id="tab-content-2" className="container tab-pane fade">
-                    Our mission to take make things possible through donations.
+                    Our mission to take make things possible through donations.Children are often pulled out of school because they are sick with a waterborne disease that can cause illnesses like diarrhea. Missing school because there is no clean water or proper sanitation available means that students are missing out on education that expands their perspectives and gives them tools to succeed in life. 
                   </div>
                   <div id="tab-content-3" className="container tab-pane fade">
-                    Create change through donations!
+                    Create change through donations!Touching the lives of a wide range of community children through meaningful school- and community-based programs.
                   </div>
                 </div>
               </div>

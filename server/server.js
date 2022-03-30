@@ -1,7 +1,7 @@
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
-require("dotenv").config();
+require("dotenv").config({ path: "../.env" });
 
 const MULTIPLIER = 100;
 
@@ -37,10 +37,8 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-// API key for testing purposes, needs to be placed in .env file before deploying
-const stripe = require("stripe")(
-  "sk_test_51KgdiPLjNl0PfVF02aF7hfVDXiNDAXFcTcttw3ECXHqyRrA3Jb3gGA91IFOyEEIh5tjmnSqoc3zufbvzIXx2VLN200hJ9AWkvi"
-);
+// API key for testing purposes
+const stripe = require("stripe")(process.env.STRIPE_API_KEY);
 
 // POST request to make a payment/donation to a charity, through Stripe checkout window
 app.post("/donate", async (req, res) => {
@@ -63,9 +61,12 @@ app.post("/donate", async (req, res) => {
         },
       ],
       mode: "payment",
-      // Redirect back to homepage, temp links at the moment
-      success_url: "https://glacial-cliffs-90348.herokuapp.com/",
-      cancel_url: "https://glacial-cliffs-90348.herokuapp.com/",
+      // Redirect back to homepage
+      //! For production, having the bottom 2 links causes this not to work
+      success_url: "localhost:3000/",
+      cancel_url: "localhost:3000/",
+      // success_url: "https://glacial-cliffs-90348.herokuapp.com/",
+      // cancel_url: "https://glacial-cliffs-90348.herokuapp.com/",
     });
 
     res.redirect(303, session.url);

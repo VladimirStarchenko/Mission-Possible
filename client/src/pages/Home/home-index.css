@@ -60,7 +60,6 @@ img {
   background: #fff;
 }
 
-
 #nav-news {
   color: #109eb4;
 }
@@ -76,7 +75,20 @@ img {
 #nav-button:hover {
   background-color: #aed9e0 !important;
 }
-#donate-now{
+#donate-now {
   background-color: white;
 }
 
+#popular-causes {
+  color: #ffa69e;
+}
+
+#learn-more {
+  color: #aed9e0;
+}
+
+@media screen and (max-width: 755px) {
+  .title {
+    font-size: 20px !important;
+  }
+}

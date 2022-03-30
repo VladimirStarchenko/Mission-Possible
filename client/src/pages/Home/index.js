@@ -278,7 +278,7 @@ function Home() {
       <div className="causes">
         <div className="container">
           <div className="section-header text-center">
-            <p>Popular Causes</p>
+            <p id="popular-causes">Popular Causes</p>
             <h2>Let's know about charity causes around the world</h2>
           </div>
           <div className="owl-carousel causes-carousel">
@@ -286,108 +286,67 @@ function Home() {
               <div className="causes-img">
                 <img src="/assets/img/causes-1.jpg" alt="Image" />
               </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="0"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>0%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $0
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
+
               <div className="causes-text">
-                <h3>Democracy Now!</h3>
+                <h3>Democracy Now</h3>
                 <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
+                  Focuses on peace activism, environmental justice and social
+                  justice to debate and improve the system
                 </p>
               </div>
               <div className="causes-btn">
-                <a className="btn btn-custom w-100" href="https://www.democracynow.org/">Learn More</a>
+                <a
+                  className="btn btn-custom w-100"
+                  href="https://www.democracynow.org/"
+                  target="_blank"
+                >
+                  Learn More
+                </a>
               </div>
             </div>
             <div className="causes-item">
               <div className="causes-img">
                 <img src="/assets/img/causes-2.jpg" alt="Image" />
               </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="0"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>0%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $0
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
+
               <div className="causes-text">
                 <h3>Comic Relief</h3>
                 <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
+                  Invests in nonprofit and community led organizations to fight
+                  poverty and social injustice
                 </p>
               </div>
               <div className="causes-btn">
-              <a className="btn btn-custom w-100" href="https://www.comicrelief.com/">Learn More</a>
+                <a
+                  className="btn btn-custom w-100"
+                  href="https://www.comicrelief.com/"
+                  target="_blank"
+                >
+                  Learn More
+                </a>
               </div>
             </div>
             <div className="causes-item">
               <div className="causes-img">
                 <img src="/assets/img/causes-3.jpg" alt="Image" />
               </div>
-              <div className="causes-progress">
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="0"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <span>0%</span>
-                  </div>
-                </div>
-                <div className="progress-text">
-                  <p>
-                    <strong>Raised:</strong> $0
-                  </p>
-                  <p>
-                    <strong>Goal:</strong> $50000
-                  </p>
-                </div>
-              </div>
+
               <div className="causes-text">
                 <h3>Safe Passage</h3>
                 <p>
-                  Lorem ipsum dolor sit amet elit. Phasell nec pretium mi.
-                  Curabit facilis ornare velit non vulputa
+                  Advocates formerly abused and traficked child refugees
+                  arriving in Europe. Giving them access to their legal rights
+                  and safe shelter
                 </p>
               </div>
               <div className="causes-btn">
-                <a className="btn btn-custom w-100" href="https://safe-passage.ca/">Learn More</a>
+                <a
+                  className="btn btn-custom w-100"
+                  href="https://safe-passage.ca/"
+                  target="_blank"
+                >
+                  Learn More
+                </a>
               </div>
             </div>
           </div>

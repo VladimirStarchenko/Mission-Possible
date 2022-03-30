@@ -25,9 +25,9 @@ const AppNavbar = () => {
 
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
         <Container fluid>
-          <Navbar.Brand as={Link} to="/">
+          <Navbar.Brand className="title" as={Link} to="/">
             Mission Possible
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar" />

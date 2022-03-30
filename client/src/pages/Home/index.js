@@ -139,7 +139,7 @@ function Home() {
                 className="about-img"
                 data-parallax="scroll"
                 // data-image-src="/assets/img/facts.jpg"
-                data-image-src="/assets/img/donateBox.jpg"
+                data-image-src="/assets/img/happy-kids.jpg"
               ></div>
             </div>
             <div className="col-lg-6">
@@ -187,15 +187,15 @@ function Home() {
 
                 <div className="tab-content">
                   <div id="tab-content-1" className="container tab-pane active">
-                    We are a non profit organization working to raise money for
+                    We are a charity organization working to raise money for
                     various causes throughtout Canada. Benefactors can donate to
-                    the charity of their choice.
+                    the charity of their choice. We always think about helping because making little donation, can make a great change in the world.
                   </div>
                   <div id="tab-content-2" className="container tab-pane fade">
-                    Our mission to take make things possible through donations.
+                    Our mission to take make things possible through donations.Children are often pulled out of school because they are sick with a waterborne disease that can cause illnesses like diarrhea. Missing school because there is no clean water or proper sanitation available means that students are missing out on education that expands their perspectives and gives them tools to succeed in life.
                   </div>
                   <div id="tab-content-3" className="container tab-pane fade">
-                    Create change through donations!
+                    Create change through donations!Touching the lives of a wide range of community children through meaningful school- and community-based programs.
                   </div>
                 </div>
               </div>
@@ -284,7 +284,7 @@ function Home() {
           <div className="owl-carousel causes-carousel">
             <div className="causes-item">
               <div className="causes-img">
-                <img src="/assets/img/causes-1.jpg" alt="Image" />
+                <img src="/assets/img/democracyNow.jpg" alt="Image" />
               </div>
 
               <div className="causes-text">
@@ -306,7 +306,7 @@ function Home() {
             </div>
             <div className="causes-item">
               <div className="causes-img">
-                <img src="/assets/img/causes-2.jpg" alt="Image" />
+                <img src="/assets/img/comic-relief.jpg" alt="Image" />
               </div>
 
               <div className="causes-text">
@@ -328,7 +328,7 @@ function Home() {
             </div>
             <div className="causes-item">
               <div className="causes-img">
-                <img src="/assets/img/causes-3.jpg" alt="Image" />
+                <img src="/assets/img/safePassage.jpg" alt="Image" />
               </div>
 
               <div className="causes-text">
@@ -358,7 +358,7 @@ function Home() {
       <div
         className="donate"
         data-parallax="scroll"
-        // data-image-src="/assets/img/donate.jpg"
+      // data-image-src="/assets/img/donate.jpg"
       >
         <div className="container">
           <div className="row align-items-center">
@@ -429,7 +429,7 @@ function Home() {
             <h2 id="founders-header">The founders of Mission Possible</h2>
           </div>
           <div className="row">
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="team-item">
                 <div className="team-img">
                   <img src="/assets/img/arslan_razi.jpg" alt="Team" />
@@ -447,7 +447,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="team-item">
                 <div className="team-img">
                   <img src="/assets/img/about-me.jpg" alt="Team" />
@@ -465,10 +465,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="/assets/img/daniel-az.jpeg" alt="Team" />
+                  <img src="/assets/img/Daniel.jpg" alt="Team" />
                 </div>
                 <div className="team-text">
                   <h2>Daniel Arzanipour</h2>
@@ -483,10 +483,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="team-item">
                 <div className="team-img">
-                  <img src="/assets/img/fabi-team.jpg" alt="Team" />
+                  <img src="/assets/img/my-avatar.jpg" alt="Team" />
                 </div>
                 <div className="team-text">
                   <h2>Fabiola Castaneda G.</h2>
@@ -502,7 +502,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="team-item">
                 <div className="team-img">
                   <img src="/assets/img/joona-lu.jpg" alt="Team" />
@@ -521,7 +521,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="team-item">
                 <div className="team-img">
                   <img src="/assets/img/vlad-avatar.jpg" alt="Team" />

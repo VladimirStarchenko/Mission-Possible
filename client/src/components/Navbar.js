@@ -39,9 +39,6 @@ const AppNavbar = () => {
               {/* if user is logged in show Saved Charities and logout */}
               {Auth.loggedIn() ? (
                 <>
-                  <Nav.Link as={Link} to="/saved">
-                    Saved Charities
-                  </Nav.Link>
                   <Nav.Link onClick={() => openModal()}>Settings</Nav.Link>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>

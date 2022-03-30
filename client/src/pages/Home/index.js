@@ -7,93 +7,6 @@ import "./home-index.css";
 function Home() {
   return (
     <>
-      {/* <!-- Carousel Start --> */}
-      {/* <div className="carousel">
-        <div className="container-fluid">
-          <div className="owl-carousel">
-            <div className="carousel-item">
-              <div className="carousel-img">
-                <img src="/assets/img/carousel-1.jpg" alt="Image" />
-              </div>
-              <div className="carousel-text">
-                <h1>Let's be kind for children</h1>
-                <p>
-                  Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris.
-                  Vivamus egestas eleifend dui ac consequat at lectus in
-                  malesuada
-                </p>
-                <div className="carousel-btn">
-                  <a className="btn btn-custom" href="">
-                    Donate Now
-                  </a>
-                  <a
-                    className="btn btn-custom btn-play"
-                    data-toggle="modal"
-                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                    data-target="#videoModal"
-                  >
-                    Watch Video
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="carousel-img">
-                <img src="/assets/img/carousel-2.jpg" alt="Image" />
-              </div>
-              <div className="carousel-text">
-                <h1>Get Involved with helping hand</h1>
-                <p>
-                  Morbi sagittis turpis id suscipit feugiat. Suspendisse eu
-                  augue urna. Morbi sagittis, orci sodales varius fermentum,
-                  tortor
-                </p>
-                <div className="carousel-btn">
-                  <a className="btn btn-custom" href="">
-                    Donate Now
-                  </a>
-                  <a
-                    className="btn btn-custom btn-play"
-                    data-toggle="modal"
-                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                    data-target="#videoModal"
-                  >
-                    Watch Video
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="carousel-img">
-                <img src="/assets/img/carousel-3.jpg" alt="Image" />
-              </div>
-              <div className="carousel-text">
-                <h1>Bringing smiles to millions</h1>
-                <p>
-                  Sed ultrices, est eget feugiat accumsan, dui nibh egestas
-                  tortor, ut rhoncus nibh ligula euismod quam. Proin
-                  pellentesque odio
-                </p>
-                <div className="carousel-btn">
-                  <a className="btn btn-custom" href="">
-                    Donate Now
-                  </a>
-                  <a
-                    className="btn btn-custom btn-play"
-                    data-toggle="modal"
-                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                    data-target="#videoModal"
-                  >
-                    Watch Video
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <!-- Carousel End --> */}
-
       {/* <!-- Video Modal Start--> */}
       <div
         className="modal fade"
@@ -189,13 +102,23 @@ function Home() {
                   <div id="tab-content-1" className="container tab-pane active">
                     We are a charity organization working to raise money for
                     various causes throughtout Canada. Benefactors can donate to
-                    the charity of their choice. We always think about helping because making little donation, can make a great change in the world.
+                    the charity of their choice. We always think about helping
+                    because making little donation, can make a great change in
+                    the world.
                   </div>
                   <div id="tab-content-2" className="container tab-pane fade">
-                    Our mission to take make things possible through donations.Children are often pulled out of school because they are sick with a waterborne disease that can cause illnesses like diarrhea. Missing school because there is no clean water or proper sanitation available means that students are missing out on education that expands their perspectives and gives them tools to succeed in life.
+                    Our mission to take make things possible through
+                    donations.Children are often pulled out of school because
+                    they are sick with a waterborne disease that can cause
+                    illnesses like diarrhea. Missing school because there is no
+                    clean water or proper sanitation available means that
+                    students are missing out on education that expands their
+                    perspectives and gives them tools to succeed in life.
                   </div>
                   <div id="tab-content-3" className="container tab-pane fade">
-                    Create change through donations!Touching the lives of a wide range of community children through meaningful school- and community-based programs.
+                    Create change through donations!Touching the lives of a wide
+                    range of community children through meaningful school- and
+                    community-based programs.
                   </div>
                 </div>
               </div>
@@ -358,7 +281,7 @@ function Home() {
       <div
         className="donate"
         data-parallax="scroll"
-      // data-image-src="/assets/img/donate.jpg"
+        // data-image-src="/assets/img/donate.jpg"
       >
         <div className="container">
           <div className="row align-items-center">

@@ -26,17 +26,6 @@ const userSchema = new Schema(
     toObject: { virtuals: true },
   }
 );
-
-// hash user password
-// userSchema.pre("save", async function (next) {
-//   if (this.isNew || this.isModified("password")) {
-//     const saltRounds = 10;
-//     this.password = await bcrypt.hash(this.password, saltRounds);
-//   }
-
-//   next();
-// });
-
 // Encrypt/hash password before user is created
 userSchema.pre("save", async function (next) {
   // If the password has not been modified then exit this function and call the next middleware

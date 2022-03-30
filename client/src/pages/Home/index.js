@@ -100,25 +100,16 @@ function Home() {
 
                 <div className="tab-content">
                   <div id="tab-content-1" className="container tab-pane active">
-                    We are a charity organization working to raise money for
-                    various causes throughtout Canada. Benefactors can donate to
-                    the charity of their choice. We always think about helping
-                    because making little donation, can make a great change in
+                    We are a  group of web developers working to help charity organizations increase their donations to improve necessary causes. We work to make it easy for benefactors to visit our website and donate to a charity of their choice.
+                    We believe that making a little donation, can make a great change in
                     the world.
                   </div>
                   <div id="tab-content-2" className="container tab-pane fade">
                     Our mission to take make things possible through
-                    donations.Children are often pulled out of school because
-                    they are sick with a waterborne disease that can cause
-                    illnesses like diarrhea. Missing school because there is no
-                    clean water or proper sanitation available means that
-                    students are missing out on education that expands their
-                    perspectives and gives them tools to succeed in life.
+                    donations. Our organizations is currently focused on tackling three causes. We are working with Democracy Now! to increase their outreach over media outlets, working to debate and discuss world systems. We are supporting Comic Relief to deal with poverty in various communities and get to the root cause of this issue. With Safe Passage were working to give young refugees a safe home and accessing their legal rights through funding any of their legal fees. 
                   </div>
                   <div id="tab-content-3" className="container tab-pane fade">
-                    Create change through donations!Touching the lives of a wide
-                    range of community children through meaningful school- and
-                    community-based programs.
+                    Create change through donations! We envision a world with increased democratic rights, improved quality of life, and access to rights, education, and citizenship. 
                   </div>
                 </div>
               </div>
@@ -211,10 +202,10 @@ function Home() {
               </div>
 
               <div className="causes-text">
-                <h3>Democracy Now</h3>
+                <h3>Democracy Now!</h3>
                 <p>
                   Focuses on peace activism, environmental justice and social
-                  justice to debate and improve the system
+                  justice to debate and improve the system.
                 </p>
               </div>
               <div className="causes-btn">
@@ -236,7 +227,7 @@ function Home() {
                 <h3>Comic Relief</h3>
                 <p>
                   Invests in nonprofit and community led organizations to fight
-                  poverty and social injustice
+                  poverty and social injustice.
                 </p>
               </div>
               <div className="causes-btn">
@@ -257,9 +248,9 @@ function Home() {
               <div className="causes-text">
                 <h3>Safe Passage</h3>
                 <p>
-                  Advocates formerly abused and traficked child refugees
+                  Advocates for abused and traficked child refugees
                   arriving in Europe. Giving them access to their legal rights
-                  and safe shelter
+                  and safe shelter.
                 </p>
               </div>
               <div className="causes-btn">
@@ -352,7 +343,7 @@ function Home() {
             <h2 id="founders-header">The founders of Mission Possible</h2>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="team-item">
                 <div className="team-img">
                   <img src="/assets/img/arslan_razi.jpg" alt="Team" />
@@ -370,7 +361,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="team-item">
                 <div className="team-img">
                   <img src="/assets/img/about-me.jpg" alt="Team" />
@@ -388,7 +379,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="team-item">
                 <div className="team-img">
                   <img src="/assets/img/Daniel.jpg" alt="Team" />
@@ -406,7 +397,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="team-item">
                 <div className="team-img">
                   <img src="/assets/img/my-avatar.jpg" alt="Team" />
@@ -425,7 +416,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="team-item">
                 <div className="team-img">
                   <img src="/assets/img/joona-lu.jpg" alt="Team" />
@@ -444,7 +435,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="team-item">
                 <div className="team-img">
                   <img src="/assets/img/vlad-avatar.jpg" alt="Team" />

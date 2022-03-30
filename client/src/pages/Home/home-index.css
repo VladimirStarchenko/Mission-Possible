@@ -1,58 +1,79 @@
 #learn-subtext {
   color: #ffa69e !important;
 }
+
 #vision-mission {
   color: #109eb4;
 }
+
 #about-mission {
   color: #109eb4;
 }
+
 #vision-tab {
   color: #109eb4 !important;
 }
+
 #subheader-causes {
   color: black;
 }
+
 #causes-header {
   color: #ffa69e !important;
 }
+
 #democracy-header {
   color: #109eb4;
 }
+
 #comic-header {
   color: #109eb4;
 }
+
 #safe-header {
   color: #109eb4;
 }
+
 #donate-subheader {
   color: black;
 }
+
 #donate-header {
   color: #ffa69e;
 }
+
 #mission-statement {
   color: black;
 }
+
 #donate-section {
   background-color: #aed9e0;
 }
+
 #founders-header {
   color: #ffa69e;
+}
+
+img {
+  height: 300px;
 }
 
 #contact-header {
   color: black;
 }
+
 #contact-subheader {
   color: #ffa69e;
 }
+
 #sendMessageButton {
   background-color: rgb(238, 232, 232);
 }
+
 #sendMessageButton:hover {
   background-color: #c2edf4 !important;
 }
+
 .carousel {
   background: #fff;
 }
@@ -60,18 +81,23 @@
 #nav-news {
   color: #109eb4;
 }
+
 #nav-head {
   color: #109eb4;
 }
+
 #nav-sub {
   color: #109eb4;
 }
+
 #nav-button {
   background-color: rgb(238, 232, 232);
 }
+
 #nav-button:hover {
   background-color: #aed9e0 !important;
 }
+
 #donate-now {
   background-color: white;
 }
@@ -83,24 +109,36 @@
 #learn-more {
   color: #aed9e0;
 }
-.section-header{
-  margin-top:100px;
+
+.section-header {
+  margin-top: 100px;
 }
 
-.owl-item{
+.owl-item {
   box-shadow: 5px 0 5px grey;
 }
- 
+
 
 .navbar-expand-lg .navbar-collapse {
-  display: flex!important;
+  display: flex !important;
   flex-basis: auto;
-  padding:10px;
-  margin-bottom:20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.causes .causes-text h3 {
+  color: rgb(52, 50, 50);
 }
 
 @media screen and (max-width: 755px) {
   .title {
     font-size: 20px !important;
+  }
+  img{
+    display: block;
+    justify-content: center;
+    margin:10px auto;
+  }
+  .team-text{
   }
 }

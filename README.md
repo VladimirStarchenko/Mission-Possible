@@ -44,7 +44,7 @@ As a benefactor, I want to make donations to reputable charities of my choice, s
 
 <!-- Update this link -->
 
-A deployed version of this app can be accessed by clicking this [link](http://www.google.ca)
+A deployed version of this app can be accessed by clicking this [link](https://glacial-cliffs-90348.herokuapp.com/)
 
 ## Usage
 
